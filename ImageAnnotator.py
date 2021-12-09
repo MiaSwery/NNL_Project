@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageTk
 
-path = "dataset/with_mask/image_0.png"
+path = "dataset/with_mask/image_101.png"
 #img = Image.open(path)
 #img.show()
 
@@ -47,10 +47,7 @@ canvas.create_image(0, 0, image=img, anchor=tk.NW)
 
 # Create selection rectangle (invisible since corner points are equal).
 rect_id = canvas.create_rectangle(topx, topy, topx, topy,
-                                  dash=(2,2), fill='', outline='white')
-
-selection = 0 
-pre_topx = topx
+                                  dash=(2,2), fill='', outline='black')
 
 
 
@@ -67,13 +64,23 @@ panel = tk.Label(root,image = img)
 panel.pack(side = "bottom", fill = "both", expand="yes")
 '''
 
+button1 = tk.Button(root, text="-->", bg='white', 
+                              command=lambda: new_window())
+button1.pack(side=tk.BOTTOM)
+
+button2 = tk.Button(root, text="<--", bg='white', 
+                              command=lambda: new_window())
+button2.pack(side=tk.BOTTOM)
+
+button3 = tk.Button(root, text="Save", bg='white', 
+                              command=lambda: new_window())
+button3.pack(side=tk.BOTTOM)
+
 
 # show window
 root.mainloop()
 
-
 print("Position x haut gauche :",topx)
 print("Position y haut gauche :" ,topy)
 print("Position x bas droite :",botx)
-print("Position topy bas droite :" ,boty)
-
+print("Position y bas droite :" ,boty)
