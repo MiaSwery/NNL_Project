@@ -72,7 +72,7 @@ def info_box(coords1, coords2):
 
    # Popup window : 
    popup= tk.Toplevel(root)
-   popup.geometry("410x230")
+   popup.geometry("800x500")
    popup.title("Information : New box")
    Label(popup, text= message).place(x=20,y=20)
 
@@ -101,7 +101,7 @@ def update_category(choice):
 # Fonction to create a window to select the category of the current box
 def category_selection():
     selection = tk.Toplevel(root)
-    selection.geometry("150x150")
+    selection.geometry("400x400")
     selection.title("Category selection")
 
     variable = tk.StringVar(selection)
@@ -123,6 +123,7 @@ def category_selection():
 #########################
 
 root = tk.Tk()
+root.geometry("1000x1000")
 root.wm_title("Tkinter window")
 img = ImageTk.PhotoImage(Image.open(path))
 
