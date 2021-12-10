@@ -33,11 +33,12 @@ def click(event):
         second_coords = (event.x,event.y)
 
         if(first_coords==second_coords):  #Double click on a box
-            for value in boxes.values():
+            for key,value in boxes.items():
                 x1 , y1 = value[0]
                 x2 , y2 = value[1]
                 if(((min(x1,x2)<=first_coords[0])and(first_coords[0]<=max(x1,x2)))
                     and((min(y1,y2)<=first_coords[1])and(first_coords[1]<=max(y1,y2)))):  # ie if we are inside a box
+                    rect_id = key
                     info_box(value[0],value[1])
 
         else: #Creation of a box
@@ -123,8 +124,8 @@ def category_selection():
 #########################
 
 root = tk.Tk()
-root.geometry("1000x1000")
 root.wm_title("Tkinter window")
+root.geometry("1000x1000")
 img = ImageTk.PhotoImage(Image.open(path))
 
 
