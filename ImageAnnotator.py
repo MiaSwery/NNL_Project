@@ -38,15 +38,20 @@ def click(event):
                 x2 , y2 = value[1]
                 if(((min(x1,x2)<=first_coords[0])and(first_coords[0]<=max(x1,x2)))
                     and((min(y1,y2)<=first_coords[1])and(first_coords[1]<=max(y1,y2)))):  # ie if we are inside a box
-                    rect_id = key
-                    info_box(value[0],value[1])
+                    info_box(key)
 
         else: #Creation of a box
-            rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
-                                      dash=(2,2), fill='', outline='black')
-            canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1]) 
-            boxes[rect_id]= [first_coords,second_coords,"No Category"] # we add a box in our dictionnary
-            info_box(first_coords,second_coords)
+            height = abs(first_coords[1]- second_coords[1])
+            width = abs(first_coords[0] - second_coords[0])
+            area  = height*width
+            if (area>40) and (width>5) and (height>5) :
+                rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
+                                          dash=(2,2), fill='', outline='black')
+                canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1])
+                boxes[rect_id]= [first_coords,second_coords,height,width,area,"No Category"] # we add a box in our dictionnary
+                info_box(rect_id)
+            else:
+                print("Be careful ! The box you are drawing is too small. Hence, it will not be saved.")
 
 
         first_coords = None
@@ -56,7 +61,14 @@ def click(event):
 
 
 # Fonction to create a popup to tells information about a box created. 
-def info_box(coords1, coords2):
+def info_box(rect_id):
+   global boxes
+   coords1 = boxes[rect_id][0]
+   coords2 = boxes[rect_id][1]
+   height = boxes[rect_id][2]
+   width =  boxes[rect_id][3]
+   area = boxes[rect_id][4]
+
    x1 = coords1[0]
    y1 = coords1[1]
    x2 = coords2[0]
@@ -67,7 +79,12 @@ def info_box(coords1, coords2):
    info_top_right = " point at top right         : (" + str(max(x1,x2)) + " , " + str(max(y1,y2)) + ") \n"
    info_bot_left = "point at bottom left     : (" + str(min(x1,x2)) + " , " + str(min(y1,y2)) + ") \n"
    info_bot_right = "point at bottom right   : (" + str(max(x1,x2)) + " , " + str(min(y1,y2)) + ") \n"
-   info_points = info_top_left + info_top_right + info_bot_left + info_bot_right
+   
+   info_height = "height   : " + str(height) + " \n"
+   info_width = "width   : " +  str(width) + " \n"
+   info_area = "area   : " + str(area) + " \n"
+
+   info_points = info_top_left + info_top_right + info_bot_left + info_bot_right + info_height + info_width + info_area
 
    message = "You selected a box with the following information : \n\n  " + info_points
 
@@ -91,9 +108,9 @@ def update_category(choice):
     global boxes
     global rect_id
 
-    #update of the cztegory :
+    #update of the category :
     info = boxes[rect_id]
-    info[2] = choice
+    info[5] = choice
     boxes[rect_id] = info
 
     print(boxes)
