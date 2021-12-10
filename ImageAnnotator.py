@@ -15,7 +15,7 @@ import glob
 first_coords = None
 second_coords = None
 
-boxes = []
+boxes = {} # Dictionnary to stock the information of every box
 
 rect_id = 0
 
@@ -31,11 +31,21 @@ def click(event):
         first_coords = (event.x,event.y)
     else: #ie if we clicked a first time, and we need to click a second time to create a box
         second_coords = (event.x,event.y)
-        rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
-                                  dash=(2,2), fill='', outline='black')
-        canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1]) 
-        boxes = boxes + [[rect_id,first_coords,second_coords,"No Category"]]
-        info_box(first_coords,second_coords)
+
+        if(first_coords==second_coords):  #Double click on a box
+            for value in boxes.values():
+                x1 , y1 = value[0]
+                x2 , y2 = value[1]
+                if(((min(x1,x2)<=first_coords[0])and(first_coords[0]<=max(x1,x2)))
+                    and((min(y1,y2)<=first_coords[1])and(first_coords[1]<=max(y1,y2)))):  # ie if we are inside a box
+                    info_box(value[0],value[1])
+
+        else: #Creation of a box
+            rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
+                                      dash=(2,2), fill='', outline='black')
+            canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1]) 
+            boxes[rect_id]= [first_coords,second_coords,"No Category"] # we add a box in our dictionnary
+            info_box(first_coords,second_coords)
 
 
         first_coords = None
@@ -80,9 +90,10 @@ def update_category(choice):
     global boxes
     global rect_id
 
-    for i in boxes:
-        if i[0]==rect_id:
-            i[3]=choice
+    #update of the cztegory :
+    info = boxes[rect_id]
+    info[2] = choice
+    boxes[rect_id] = info
 
     print(boxes)
 
