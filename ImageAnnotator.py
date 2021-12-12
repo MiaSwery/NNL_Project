@@ -13,6 +13,8 @@ rect_id = 0 # Number of the current selected rectangle
 
 current_image_number = 0 # Number of the current image
 
+list_category = ["Category 1", "Category 2", "Category 3"] # List of categories
+
 
 # Function to handle the creation of boxes
 def click(event):
@@ -71,31 +73,41 @@ def info_box(rect_id):
    y2 = coords2[1]
 
    # String for the message of each point : 
-   info_top_left = "point at top left           : (" + str(min(x1,x2)) + " , " + str(max(y1,y2)) + ") \n"
-   info_top_right = " point at top right         : (" + str(max(x1,x2)) + " , " + str(max(y1,y2)) + ") \n"
-   info_bot_left = "point at bottom left     : (" + str(min(x1,x2)) + " , " + str(min(y1,y2)) + ") \n"
-   info_bot_right = "point at bottom right   : (" + str(max(x1,x2)) + " , " + str(min(y1,y2)) + ") \n"
+   info_top_left = "Point at top left       :  (" + str(min(x1,x2)) + "," + str(max(y1,y2)) + ")\n"
+   info_top_right = "Point at top right      :  (" + str(max(x1,x2)) + "," + str(max(y1,y2)) + ")\n"
+   info_bot_left = "Point at bottom left    :  (" + str(min(x1,x2)) + "," + str(min(y1,y2)) + ")\n"
+   info_bot_right = "Point at bottom right   :  (" + str(max(x1,x2)) + "," + str(min(y1,y2)) + ")\n"
    
-   info_height = "height   : " + str(height) + " \n"
-   info_width = "width   : " +  str(width) + " \n"
-   info_area = "area   : " + str(area) + " \n"
+   # String for the sizes
+   info_height = "Height                  :  " + str(height) + " \n"
+   info_width = "Width                   :  " +  str(width) + " \n"
+   info_area = "Area                    :  " + str(area) + " \n"
 
-   info_points = info_top_left + info_top_right + info_bot_left + info_bot_right + info_height + info_width + info_area
+   info_points = info_top_left + info_top_right + info_bot_left + info_bot_right
+   info_size = info_height + info_width + info_area
+   info_category = "Category                :  " + boxes[rect_id][5]
 
-   message = "You selected a box with the following information : \n\n  " + info_points
+   message = "          You selected a box with the following information : \n\n" + info_points + info_size + info_category
 
    # Popup window : 
    popup= tk.Toplevel(root)
    popup.geometry("800x500")
-   popup.title("Information : New box")
-   Label(popup, text= message).place(x=20,y=20)
+   popup.title("Information : Box")
+
+   # Text on the window : 
+   text = tk.Text(popup, height = 10, width = 70)
+   text.insert(tk.END, message)
+   text.config(state= tk.DISABLED)
+   text.pack()
+
+   #Label(popup, text= message).place(x=20,y=20)
 
    # Button to quit the popup window : 
    exit_button = tk.Button(popup, text="OK", command=popup.destroy)
    exit_button.pack(pady=5 , side=tk.BOTTOM)
 
    # Button to select the category :
-   selection_button = tk.Button(popup, text = "Select a category",command=category_selection)
+   selection_button = tk.Button(popup, text = "Select a category",command=lambda:[popup.destroy(),category_selection()])
    selection_button.pack(pady=5, side = tk.BOTTOM)
 
 
@@ -111,21 +123,47 @@ def update_category(choice):
     #print(boxes)
 
 
+# Function to add a new category
+def new_category():
+    global entry , list_category
+    input = entry.get() 
+    if((input not in list_category)and(len(input.strip()))):
+        list_category.append(input)
+        messagebox.showinfo("Information", "You added the following category : " + input)
+
+
+
+
 # Function to create a window to select the category of the current box
 def category_selection():
+    global selection, variable, menu, entry, list_category, rect_id
+
+    # Window to select a category
     selection = tk.Toplevel(root)
     selection.geometry("400x400")
     selection.title("Category selection")
 
     variable = tk.StringVar(selection)
-    variable.set("No Category") # default value
+    variable.set("Select a category") # default value
 
-    w = tk.OptionMenu(selection, variable, "No Category", "Category 1", "Category 2", "Category 3", command=update_category)
-    w.pack()
+    # The menu of category 
+    menu = tk.OptionMenu(selection, variable, *list_category, command=update_category)
+    menu.pack()
+
+    # Allow the user to type a string
+    entry = tk.Entry(selection)
+
+    # Button to add a category
+    category_button = tk.Button(selection,text="Add a new category",command=lambda:[new_category(),selection.destroy(),category_selection()])
+    category_button.pack(pady=5,side=tk.BOTTOM)
+
+    entry.pack(pady=5,side=tk.BOTTOM)
+    entry.focus_set()
+
 
     # Button to quit the window : 
-    exit_button = tk.Button(selection, text="OK", command=selection.destroy)
-    exit_button.pack(pady=5 , side=tk.BOTTOM)
+    exit_button = tk.Button(selection, text="Confirm the category selected", command=lambda:[selection.destroy(),info_box(rect_id)])
+    exit_button.pack(pady=5)
 
 
 # Function to update the image when we decide to go to the next image
@@ -140,7 +178,7 @@ def update_image_right():
     # next image
     current_image_number += 1
 
-    if(current_image_number<=len(images_resized)): #If we still have images to annotate.
+    if(current_image_number<len(list_images)): #If we still have images to annotate.
         # change image on canvas
         new_image = images_resized[current_image_number]
         canvas.config(width=new_image.width(), height=new_image.height())
@@ -175,7 +213,7 @@ print("Generation of the images ...")
 print("It might take a few seconds.")
 
 list_images = glob.glob("dataset/with_mask/*png") + glob.glob("dataset/without_mask/*png")  # All the paths
-
+#list_images = list_images[0:7] 
 images = [Image.open(i) for i in list_images] #All the images
 
 for i in range(len(images)):
