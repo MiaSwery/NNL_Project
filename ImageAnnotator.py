@@ -132,15 +132,19 @@ def new_category():
         messagebox.showinfo("Information", "You added the following category : " + input)
 
 
+# Function to replace a category
+def replace_category():
+    global replace_category_NEW_entry, list_category
+    input = entry.get
 
 
 # Function to create a window to select the category of the current box
 def category_selection():
-    global selection, variable, menu, entry, list_category, rect_id
+    global selection, variable, menu, entry, list_category, rect_id, replace_category_NEW_entry, replace_category_OLD_entry
 
     # Window to select a category
     selection = tk.Toplevel(root)
-    selection.geometry("400x400")
+    selection.geometry("800x400")
     selection.title("Category selection")
 
     variable = tk.StringVar(selection)
@@ -150,16 +154,41 @@ def category_selection():
     menu = tk.OptionMenu(selection, variable, *list_category, command=update_category)
     menu.pack()
 
+
+    # Button to replace a category
+    replace_category_button = tk.Button(selection,text="Replace a category")
+
+    replace_category_NEW_entry = tk.Entry(selection, width = 50)
+    replace_category_button.pack(pady=5,side=tk.BOTTOM)
+    replace_category_NEW_entry.focus_set()
+    replace_category_NEW_entry.insert(0, 'Enter the new name of the category you want to change')
+    replace_category_NEW_entry.bind('<FocusIn>', on_entry_click_ReplaceCategory_NEW)
+    replace_category_NEW_entry.bind('<FocusOut>', on_focusout_ReplaceCategory_NEW)
+    replace_category_NEW_entry.config(fg = 'grey')
+    replace_category_NEW_entry.pack(pady=5,side=tk.BOTTOM)
+
+    replace_category_OLD_entry = tk.Entry(selection, width = 50)
+    replace_category_OLD_entry.focus_set()
+    replace_category_OLD_entry.insert(0, 'Enter the name of the category to be replaced')
+    replace_category_OLD_entry.bind('<FocusIn>', on_entry_click_ReplaceCategory_OLD)
+    replace_category_OLD_entry.bind('<FocusOut>', on_focusout_ReplaceCategory_OLD)
+    replace_category_OLD_entry.config(fg = 'grey')
+    replace_category_OLD_entry.pack(pady=5,side=tk.BOTTOM)
+
+
     # Allow the user to type a string
-    entry = tk.Entry(selection)
+    entry = tk.Entry(selection, width = 50)
 
     # Button to add a category
     category_button = tk.Button(selection,text="Add a new category",command=lambda:[new_category(),selection.destroy(),category_selection()])
     category_button.pack(pady=5,side=tk.BOTTOM)
 
-    entry.pack(pady=5,side=tk.BOTTOM)
     entry.focus_set()
-
+    entry.insert(0, 'Enter the name of the new category')
+    entry.bind('<FocusIn>', on_entry_click_AddCategory)
+    entry.bind('<FocusOut>', on_focusout_AddCategory)
+    entry.config(fg = 'grey')
+    entry.pack(pady=5,side=tk.BOTTOM)
 
     # Button to quit the window : 
     exit_button = tk.Button(selection, text="Confirm the category selected", command=lambda:[selection.destroy(),info_box(rect_id)])
@@ -173,7 +202,6 @@ def update_image_right():
     for key,value in boxes.items(): # Removing the draw of the boxes of the previous image
         if(value[6]==current_image_number):
             canvas.delete(key)
-
 
     # next image
     current_image_number += 1
@@ -192,7 +220,43 @@ def update_image_right():
         button1.destroy()
         button2.destroy()
 
-    
+
+def on_entry_click_AddCategory(event):
+    global entry
+    function_entry_click(entry, 'Enter the name of the new category')
+
+def on_entry_click_ReplaceCategory_NEW(event):
+    global replace_category_NEW_entry
+    function_entry_click(replace_category_NEW_entry, 'Enter the new name of the category you want to change')
+
+def on_entry_click_ReplaceCategory_OLD(event):
+    global replace_category_OLD_entry
+    function_entry_click(replace_category_OLD_entry, 'Enter the name of the category to be replaced')
+
+def on_focusout_AddCategory(event):
+    global entry
+    function_focusout(entry, 'Enter the name of the new category')
+
+def on_focusout_ReplaceCategory_NEW(event):
+    global replace_category_NEW_entry
+    function_focusout(replace_category_NEW_entry, 'Enter the new name of the category you want to change')
+
+def on_focusout_ReplaceCategory_OLD(event):
+    global replace_category_OLD_entry
+    function_focusout(replace_category_OLD_entry, 'Enter the name of the category to be replaced')
+
+
+def function_entry_click(text_entry, text):
+    if text_entry.get() == text:
+       text_entry.delete(0, "end") # delete all the text in the entry
+       text_entry.insert(0, '') #Insert blank for user input
+       text_entry.config(fg = 'black')
+
+def function_focusout(text_entry, text):
+    if text_entry.get() == '':
+        text_entry.insert(0, text)
+        text_entry.config(fg = 'grey')
+
 
 #########################
 ###    MAIN WINDOW    ###
@@ -213,7 +277,7 @@ print("Generation of the images ...")
 print("It might take a few seconds.")
 
 list_images = glob.glob("dataset/with_mask/*png") + glob.glob("dataset/without_mask/*png")  # All the paths
-#list_images = list_images[0:7] 
+list_images = list_images[0:7] 
 images = [Image.open(i) for i in list_images] #All the images
 
 for i in range(len(images)):
