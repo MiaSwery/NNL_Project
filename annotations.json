@@ -1,0 +1,80 @@
+{
+    "data": [
+        {
+            "image": {
+                "path": "dataset/with_mask/image_0.png",
+                "boxes": [
+                    {
+                        "height": 38,
+                        "width": 66,
+                        "area": 2508,
+                        "category": "Category 1"
+                    },
+                    {
+                        "height": 42,
+                        "width": 88,
+                        "area": 3696,
+                        "category": "No Category"
+                    }
+                ]
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/with_mask/image_1.png",
+                "boxes": [
+                    {
+                        "height": 89,
+                        "width": 174,
+                        "area": 15486,
+                        "category": "Category 3"
+                    }
+                ]
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/with_mask/image_10.png",
+                "boxes": [
+                    {
+                        "height": 57,
+                        "width": 107,
+                        "area": 6099,
+                        "category": "Mask"
+                    }
+                ]
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/with_mask/image_100.png",
+                "boxes": [
+                    {
+                        "height": 65,
+                        "width": 82,
+                        "area": 5330,
+                        "category": "No Category"
+                    }
+                ]
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/with_mask/image_101.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/with_mask/image_102.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/with_mask/image_103.png",
+                "boxes": "null"
+            }
+        }
+    ]
+}
