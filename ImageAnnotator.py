@@ -4,6 +4,7 @@ from tkinter import Label
 from PIL import Image, ImageTk
 import json
 import glob
+import os
 
 first_coords = None
 second_coords = None
@@ -14,7 +15,7 @@ rect_id = 0 # Number of the current selected rectangle
 
 current_image_number = 0 # Number of the current image
 
-list_category = ["Category 1", "Category 2", "Category 3"] # List of categories
+list_category = ["No Category"] # List of categories
 
 #############################
 ###    CLICK FUNCTIONS    ###
@@ -38,7 +39,8 @@ def release_click(event):
             rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
                                       dash=(2,2), fill='', outline='red')
             canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1])
-            boxes[rect_id]= [first_coords,second_coords,height,width,area,"No Category",current_image_number] # we add a box in our dictionnary
+            boxes[rect_id]= [first_coords,second_coords,height,width,area,"No Category",current_image_number, rect_id] # we add a box in our dictionnary
+            crop_image(rect_id)
             info_box(rect_id)
         else:
             messagebox.showinfo("Information","Be careful ! The box you are drawing is too small. Hence, it will not be saved.")
@@ -66,7 +68,7 @@ def double_click(event):
 
 
 
-# Function to create a popup to tells information about a box created. 
+# Function to create a popup to tell information about a box created. 
 def info_box(rect_id):
    global boxes
    coords1 = boxes[rect_id][0]
@@ -75,16 +77,14 @@ def info_box(rect_id):
    width =  boxes[rect_id][3]
    area = boxes[rect_id][4]
 
-   x1 = coords1[0]
-   y1 = coords1[1]
-   x2 = coords2[0]
-   y2 = coords2[1]
+
+   coord = coords(rect_id)
 
    # String for the message of each point : 
-   info_top_left = "Point at top left       :  (" + str(min(x1,x2)) + "," + str(max(y1,y2)) + ")\n"
-   info_top_right = "Point at top right      :  (" + str(max(x1,x2)) + "," + str(max(y1,y2)) + ")\n"
-   info_bot_left = "Point at bottom left    :  (" + str(min(x1,x2)) + "," + str(min(y1,y2)) + ")\n"
-   info_bot_right = "Point at bottom right   :  (" + str(max(x1,x2)) + "," + str(min(y1,y2)) + ")\n"
+   info_top_left = "Point at top left       :  (" + str(coord[0][0]) + "," + str(coord[0][1]) + ")\n"
+   info_top_right = "Point at top right      :  (" + str(coord[1][0]) + "," + str(coord[1][1]) + ")\n"
+   info_bot_left = "Point at bottom left    :  (" + str(coord[2][0]) + "," + str(coord[2][1]) + ")\n"
+   info_bot_right = "Point at bottom right   :  (" + str(coord[3][0]) + "," + str(coord[3][1]) + ")\n"
    
    # String for the sizes
    info_height = "Height                  :  " + str(height) + " \n"
@@ -119,9 +119,60 @@ def info_box(rect_id):
    selection_button.pack(pady=5, side = tk.BOTTOM)
 
 
+
+##################################
+###    IMAGE FUNCTIONS    ###
+##################################
+
+def crop_image(rect_id):
+    global current_image_number, images, first_coords, second_coords
+    coord1 = boxes[rect_id][0] 
+    coord2 = boxes[rect_id][1] 
+    height = boxes[rect_id][2]
+    width =  boxes[rect_id][3]
+    x1 = coord1[0]
+    y1 = coord1[1]
+    x2 = coord2[0]
+    y2 = coord2[1]
+    left = min(x1,x2)
+    right = max(x1,x2)
+    bottom = min(y1,y2)
+    top = min(y1,y2)
+    h = x1 - x2 
+    w = y1 - y2
+
+    new_image = (images[current_image_number]).crop((left,top,left + width, top + height))
+
+    try : 
+        new_image.save("dataset/annotated_images/image" + str(rect_id) +".png")
+    except :
+        directory = "annotated_images"
+        parent_directory = "dataset/"
+        path = os.path.join(parent_directory, directory)
+        os.mkdir(path)
+        new_image.save("dataset/annotated_images/image" + str(rect_id) +".png")
+
+
+
+def coords(rect_id): 
+    global boxes
+    coord1 = boxes[rect_id][0] 
+    coord2 = boxes[rect_id][1] 
+    x1 = coord1[0]
+    y1 = coord1[1]
+    x2 = coord2[0]
+    y2 = coord2[1]
+
+    #      [      top left,                top right,              bottom left,              bottom right       ]
+    return [(min(x1,x2),max(y1,y2)), (max(x1,x2),max(y1,y2)) , (min(x1,x2),min(y1,y2)) , (max(x1,x2),min(y1,y2))]
+
+
+
+
 ##################################
 ###    CATEGORIES FUNCTIONS    ###
 ##################################
+
 # Function to update the category of the current box
 def update_category(choice):
     global boxes, rect_id
@@ -140,6 +191,10 @@ def new_category():
     input = entry.get() 
     if((input not in list_category)and(len(input.strip()))and(input!='Enter the name of the new category')):
         list_category.append(input)
+        json_object = json.dumps({'categories': list_category}, indent = 4)
+        with open("categories.json", "w") as outfile:
+            outfile.write(json_object)
+
         messagebox.showinfo("Information", "You added the following category : " + input)
 
 
@@ -165,6 +220,12 @@ def category_selection():
     menu = tk.OptionMenu(selection, variable, *list_category, command=update_category)
     menu.pack()
 
+
+    # Button to import categories from a json or csv file
+    import_category_button = tk.Button(selection,text="Import categories", command=import_category)
+    #import_category_button.pack(pady=5,side=tk.TOP)
+    import_category_button.place(x=575, y=0)
+    
 
     # Button to replace a category
     replace_category_button = tk.Button(selection,text="Replace a category")
@@ -207,7 +268,7 @@ def category_selection():
 
 
 # Function to update the image when we decide to go to the next image
-def update_image_right():
+def update_image():
     global current_image_number, rect_id, button1, button2,canvas
 
     for key,value in boxes.items(): # Removing the draw of the boxes of the previous image
@@ -227,12 +288,68 @@ def update_image_right():
         canvas.delete("all")
         generate_json()
 
-        messagebox.showinfo("Information", "You annoted every images.\nThe json file have been generated.")
+        messagebox.showinfo("Information", "You annoted every images.\nThe json file has been generated.")
 
         button1.destroy()
         button2.destroy()
         canvas.destroy()
 
+def import_category():
+    global selection, entry_import_cat
+    import_cat = tk.Toplevel(selection)
+    import_cat.geometry("700x200")
+    import_cat.title("Import categories")
+
+    txt = tk.Text(import_cat, height = 2, width = 100)
+    msg = "Please enter the path of the file containing the categories name"
+    txt.insert('end', msg +'\n')
+    txt.config(state= tk.DISABLED)
+    txt.tag_configure("msg", justify='center')
+    txt.pack(pady=5,side=tk.TOP)
+
+    entry_import_cat = tk.Entry(import_cat, width = 50)
+    entry_import_cat.focus_set()
+    entry_import_cat.pack(pady=5,side=tk.TOP)
+
+    validate_button = tk.Button(import_cat,text="Validate", command = lambda:[validate_path(), selection.destroy(), category_selection()])
+    validate_button.pack(pady=5,side=tk.BOTTOM)
+
+def validate_path():
+    global entry_import_cat, list_category
+    
+    try :
+        filepath =entry_import_cat.get()
+        f = open(filepath)
+        if filepath.endswith(".json") :
+                        
+            data = json.load(f)
+            
+            myJsonFile = open("categories.json")
+            list_category = json.load(myJsonFile)["categories"]
+            
+            for c in data['categories'] :
+                if c not in list_category :
+                    list_category.append(c)
+            
+            json_object = json.dumps({'categories': list_category}, indent = 4)
+            with open("categories.json", "w") as outfile:
+                outfile.write(json_object)
+            
+            myJsonFile.close()
+            
+            f.close()
+
+            messagebox.showinfo("Successful Retrieval","The categories have been successfully added from the file you mentioned in the path.")
+
+        elif filepath.endswith(".csv") :
+            print("okay csv")
+        else :
+            messagebox.showinfo("Unsuccessful Retrieval","The file is not a json or a csv one. Hence, we cannot extract the categories from it. Please make sure to use a json or a csv file.")
+
+        #data = json.load(f)
+        
+    except :    
+        messagebox.showinfo("Unsuccessful Retrieval","The file has not been found. Please make sure the path exists and the extension is .json or .csv.")
 
 
 ##################################
@@ -286,7 +403,7 @@ def convert_image_to_json(path,id):
     data_image = []
     for key,value in boxes.items():
         if(value[6]==id):
-            data_image.append(convert_box_to_json(value[2],value[3],value[4],value[5]))
+            data_image.append(convert_box_to_json(value[2],value[3],value[4],value[5], value[7]))
     if(data_image == []):
         return "null"
 
@@ -295,9 +412,9 @@ def convert_image_to_json(path,id):
             
         
 # Function to convert the information of a single box into a dictionnary
-def convert_box_to_json(height,width,area,category):
+def convert_box_to_json(height,width,area,category, rect_id):
     # Rajouter les coordonnées des points ??? 
-    return {'height' : height, 'width' : width, 'area' : area, 'category' : category}
+    return {'height' : height, 'width' : width, 'area' : area, 'category' : category, 'path' : "dataset/annotated_images/image" + str(rect_id) + ".png"}
 
 # Function to generate the whole json
 def generate_json():
@@ -316,13 +433,23 @@ def generate_json():
         outfile.write(json_object)     
 
 
+# Function to generate the initial category json
+def generate_category_json():      
+    # Serializing json 
+    json_object = json.dumps({'categories': []}, indent = 4)
+      
+    # Writing to sample.json
+    with open("categories.json", "w") as outfile:
+        outfile.write(json_object)     
+
+
 #########################
 ###    MAIN WINDOW    ###
 #########################
 root = tk.Tk()
 root.wm_title("Image Annotator")
 root.geometry("1000x1000")
-#root.configure(background='pink')
+root.configure(background='pink')
 
 
 welcome = "Welcome\n"
@@ -345,12 +472,15 @@ welcome_message.tag_config('msg', font='arial 13 normal')
 #welcome_message.configure(background='pink')
 welcome_message.config(state= tk.DISABLED)
 welcome_message.pack()
+welcome_message.configure(background='pink')
+
 
 
 # Function called after pressing the button "Start"
 def start_app():
-    global image_id, canvas, images_resized ,   list_path, button1, button2
+    global image_id, canvas, images_resized ,   list_path, button1, button2, images
     button_start.destroy()
+    generate_category_json()
 
     img = ImageTk.PhotoImage(Image.open("dataset/with_mask/image_0.png"))
 
@@ -395,7 +525,7 @@ def start_app():
     #########################
     ###      BUTTONS      ###
     #########################
-    button1 = tk.Button(root, text="NEXT PICTURE\n-->", bg='white',command=update_image_right)
+    button1 = tk.Button(root, text="NEXT PICTURE\n-->", bg='white',command=update_image)
     button1.pack(pady=5,side=tk.RIGHT)
 
     button2 = tk.Button(root, text="SAVE", bg='white')
