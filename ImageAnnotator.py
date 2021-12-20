@@ -16,46 +16,53 @@ current_image_number = 0 # Number of the current image
 
 list_category = ["Category 1", "Category 2", "Category 3"] # List of categories
 
+#############################
+###    CLICK FUNCTIONS    ###
+#############################
 
-# Function to handle the creation of boxes
+# Function to handle a simple click
 def click(event):
+    global first_coords
+    first_coords = (event.x, event.y)
+
+# Function to handle a released click
+def release_click(event):
     global first_coords, second_coords, boxes, rect_id, current_image_number
 
-    if(first_coords is None):  #ie if we didn't click a 1st time
-        first_coords = (event.x,event.y)
-    else: #ie if we clicked a first time, and we need to click a second time to create a box
-        second_coords = (event.x,event.y)
-
-        if(first_coords==second_coords):  #Double click on a box
-            for key,value in boxes.items():
-                x1 , y1 = value[0]
-                x2 , y2 = value[1]
-                if((((min(x1,x2)<=first_coords[0])
-                    and(first_coords[0]<=max(x1,x2)))
-                    and((min(y1,y2)<=first_coords[1])
-                    and(first_coords[1]<=max(y1,y2))))
-                    and(value[6]==current_image_number)):  # ie if we are inside a box
-
-                    rect_id = key
-                    info_box(key)
-
-        else: #Creation of a box
-            height = abs(first_coords[1]- second_coords[1])
-            width = abs(first_coords[0] - second_coords[0])
-            area  = height*width
-            if (area>40) and (width>5) and (height>5) :
-                rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
-                                          dash=(2,2), fill='', outline='red')
-                canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1])
-                boxes[rect_id]= [first_coords,second_coords,height,width,area,"No Category",current_image_number] # we add a box in our dictionnary
-                info_box(rect_id)
-            else:
-                print("Be careful ! The box you are drawing is too small. Hence, it will not be saved.")
+    second_coords = (event.x, event.y)
+    if(first_coords!=second_coords):
+        height = abs(first_coords[1]- second_coords[1])
+        width = abs(first_coords[0] - second_coords[0])
+        area  = height*width
+        if (area>40) and (width>5) and (height>5) :
+            rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
+                                      dash=(2,2), fill='', outline='red')
+            canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1])
+            boxes[rect_id]= [first_coords,second_coords,height,width,area,"No Category",current_image_number] # we add a box in our dictionnary
+            info_box(rect_id)
+        else:
+            messagebox.showinfo("Information","Be careful ! The box you are drawing is too small. Hence, it will not be saved.")
 
 
-        first_coords = None
+# Function to handle a double click
+def double_click(event):
+    global boxes, rect_id, current_image_number
 
-    #print("clicked at", event.x, event.y)
+    first_coords = (event.x, event.y)
+    
+    for key,value in boxes.items():
+        x1 , y1 = value[0]
+        x2 , y2 = value[1]
+       
+        if((((min(x1,x2)<=first_coords[0])
+            and(first_coords[0]<=max(x1,x2)))
+            and((min(y1,y2)<=first_coords[1])
+            and(first_coords[1]<=max(y1,y2))))
+            and(value[6]==current_image_number)):  # ie if we are inside a box
+                
+                rect_id = key
+                info_box(key)
+
 
 
 
@@ -112,6 +119,9 @@ def info_box(rect_id):
    selection_button.pack(pady=5, side = tk.BOTTOM)
 
 
+##################################
+###    CATEGORIES FUNCTIONS    ###
+##################################
 # Function to update the category of the current box
 def update_category(choice):
     global boxes, rect_id
@@ -332,6 +342,7 @@ welcome_message.tag_configure("welcome", justify='center')
 welcome_message.tag_add('msg','2.0','2.end')
 welcome_message.tag_config('msg', font='arial 13 normal')
 
+#welcome_message.configure(background='pink')
 welcome_message.config(state= tk.DISABLED)
 welcome_message.pack()
 
@@ -374,6 +385,9 @@ def start_app():
 
 
     canvas.bind("<Button-1>", click)
+    canvas.bind("<ButtonRelease-1>", release_click)
+    canvas.bind("<Double-1>", double_click)
+
     canvas.pack(expand=True)
 
 
