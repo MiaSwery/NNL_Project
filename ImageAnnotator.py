@@ -173,40 +173,9 @@ def coords(rect_id):
 ###    CATEGORIES FUNCTIONS    ###
 ##################################
 
-# Function to update the category of the current box
-def update_category(choice):
-    global boxes, rect_id
-
-    #update of the category :
-    info = boxes[rect_id]
-    info[5] = choice
-    boxes[rect_id] = info
-
-    #print(boxes)
-
-
-# Function to add a new category
-def new_category():
-    global entry , list_category
-    input = entry.get() 
-    if((input not in list_category)and(len(input.strip()))and(input!='Enter the name of the new category')):
-        list_category.append(input)
-        json_object = json.dumps({'categories': list_category}, indent = 4)
-        with open("categories.json", "w") as outfile:
-            outfile.write(json_object)
-
-        messagebox.showinfo("Information", "You added the following category : " + input)
-
-
-# Function to replace a category
-def replace_category():
-    global replace_category_NEW_entry, list_category
-    input = entry.get
-
-
 # Function to create a window to select the category of the current box
 def category_selection():
-    global selection, variable, menu, entry, list_category, rect_id, replace_category_NEW_entry, replace_category_OLD_entry
+    global selection, variable, menu, entry, list_category, rect_id, replace_category_NEW_entry, replace_category_OLD_entry, delete_category_entry
 
     # Window to select a category
     selection = tk.Toplevel(root)
@@ -225,10 +194,21 @@ def category_selection():
     import_category_button = tk.Button(selection,text="Import categories", command=import_category)
     #import_category_button.pack(pady=5,side=tk.TOP)
     import_category_button.place(x=575, y=0)
+
+    # Button to delete a category
+    delete_category_button = tk.Button(selection,text="Delete a category", command= lambda:[replace_category("No Category", delete_category_entry.get()),selection.destroy(),category_selection()])
+    delete_category_button.pack(pady=5, side=tk.BOTTOM)
+    delete_category_entry = tk.Entry(selection, width = 50)
+    delete_category_entry.focus_set()
+    delete_category_entry.insert(0, 'Enter the name of the category to delete')
+    delete_category_entry.bind('<FocusIn>', on_entry_click_DeleteCategory)
+    delete_category_entry.bind('<FocusOut>', on_focusout_DeleteCategory)
+    delete_category_entry.config(fg = 'grey')
+    delete_category_entry.pack(pady=5,side=tk.BOTTOM)
     
 
     # Button to replace a category
-    replace_category_button = tk.Button(selection,text="Replace a category")
+    replace_category_button = tk.Button(selection,text="Replace a category", command= lambda:[replace_category(replace_category_NEW_entry.get(), replace_category_OLD_entry.get()),selection.destroy(),category_selection()])
 
     replace_category_NEW_entry = tk.Entry(selection, width = 50)
     replace_category_button.pack(pady=5,side=tk.BOTTOM)
@@ -265,6 +245,69 @@ def category_selection():
     # Button to quit the window : 
     exit_button = tk.Button(selection, text="Confirm the category selected", command=lambda:[selection.destroy(),info_box(rect_id)])
     exit_button.pack(pady=5)
+
+
+
+# Function to update the category of the current box
+def update_category(choice):
+    global boxes, rect_id
+
+    #update of the category :
+    info = boxes[rect_id]
+    info[5] = choice
+    boxes[rect_id] = info
+
+    #print(boxes)
+
+
+# Function to add a new category
+def new_category():
+    global entry , list_category
+    input = entry.get() 
+    if((input not in list_category)and(len(input.strip()))and(input!='Enter the name of the new category')):
+        list_category.append(input)
+        json_object = json.dumps({'categories': list_category}, indent = 4)
+        with open("categories.json", "w") as outfile:
+            outfile.write(json_object)
+
+        messagebox.showinfo("Information", "You added the following category : " + input)
+
+
+# Function to replace a category
+def replace_category(str1, str2):
+    global  list_category
+    new = str1 
+    old = str2
+
+    if (old in list_category):
+       
+            #categories.json
+            myJsonFile = open("categories.json")
+
+            list_category = json.load(myJsonFile)["categories"]
+            
+            if (new not in list_category) :
+                for i in range(len(list_category)) :
+                    if  list_category[i] == old :
+                        list_category[i] = new
+            else :
+                list_category.remove(old)
+            
+            json_object = json.dumps({'categories': list_category}, indent = 4)
+            with open("categories.json", "w") as outfile:
+                outfile.write(json_object)
+            
+            #modify the boxes
+            for b, box  in boxes.items() :
+                if box[5] == old :
+                    box[5] = new
+
+            #rewrite the json
+            generate_json()
+
+    else :
+        messagebox.showinfo("Error", "You tried to replace a category that doesn't exist.")
+
 
 
 # Function to update the image when we decide to go to the next image
@@ -326,7 +369,10 @@ def validate_path():
             
             myJsonFile = open("categories.json")
             list_category = json.load(myJsonFile)["categories"]
-            
+
+            if ("No Category" not in list_category) :
+                list_category.append("No Category")
+
             for c in data['categories'] :
                 if c not in list_category :
                     list_category.append(c)
@@ -368,6 +414,10 @@ def on_entry_click_ReplaceCategory_OLD(event):
     global replace_category_OLD_entry
     function_entry_click(replace_category_OLD_entry, 'Enter the name of the category to be replaced')
 
+def on_entry_click_DeleteCategory(event):
+    global delete_category_entry
+    function_entry_click(delete_category_entry, 'Enter the name of the category to delete')
+
 def on_focusout_AddCategory(event):
     global entry
     function_focusout(entry, 'Enter the name of the new category')
@@ -379,6 +429,10 @@ def on_focusout_ReplaceCategory_NEW(event):
 def on_focusout_ReplaceCategory_OLD(event):
     global replace_category_OLD_entry
     function_focusout(replace_category_OLD_entry, 'Enter the name of the category to be replaced')
+
+def on_focusout_DeleteCategory(event):
+    global delete_category_entry
+    function_focusout(delete_category_entry, 'Enter the name of the category to delete')
 
 
 def function_entry_click(text_entry, text):
@@ -493,8 +547,8 @@ def start_app():
     #print("Generation of the images ...")
     #print("It might take a few seconds.")
 
-    list_path = glob.glob("dataset/with_mask/*png") + glob.glob("dataset/without_mask/*png")  # All the paths
-    list_path = list_path[0:7] 
+    list_path = glob.glob("dataset/with_mask/*jpg") + glob.glob("dataset/without_mask/*jpg") + glob.glob("dataset/with_mask/*png") + glob.glob("dataset/without_mask/*png")  # All the paths
+    #list_path = list_path[0:7] 
     images = [Image.open(i) for i in    list_path] #All the images
 
     for i in range(len(images)):
