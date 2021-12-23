@@ -5,11 +5,15 @@ from PIL import Image, ImageTk
 import json
 import glob
 import os
+import csv
+from shapely.geometry import Polygon
+
 
 first_coords = None
 second_coords = None
 
 boxes = {} # Dictionnary to stock the information of every box
+           # {rect id : [first_coords,second_coords,height,width,area,Category, Image Number, rect_id]} 
 
 rect_id = 0 # Number of the current selected rectangle
 
@@ -36,14 +40,23 @@ def release_click(event):
         width = abs(first_coords[0] - second_coords[0])
         area  = height*width
         if (area>40) and (width>5) and (height>5) :
-            rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
+            new_box = [first_coords,second_coords,height,width,area,"No Category",current_image_number, rect_id] 
+
+            if(total_intersection(new_box)):
+                messagebox.showinfo("Information","The box you selected will not be saved because it is included in another box or a box is included in your selection.")
+
+            else:
+                rect_id = canvas.create_rectangle(first_coords[0], first_coords[1], second_coords[0], second_coords[1],
                                       dash=(2,2), fill='', outline='red')
-            canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1])
-            boxes[rect_id]= [first_coords,second_coords,height,width,area,"No Category",current_image_number, rect_id] # we add a box in our dictionnary
-            crop_image(rect_id)
-            info_box(rect_id)
+                canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1])
+                boxes[rect_id]= new_box # we add a box in our dictionnary
+                crop_image(rect_id)
+                info_box(rect_id)
+
         else:
             messagebox.showinfo("Information","Be careful ! The box you are drawing is too small. Hence, it will not be saved.")
+
+    check_intersections()
 
 
 # Function to handle a double click
@@ -78,7 +91,7 @@ def info_box(rect_id):
    area = boxes[rect_id][4]
 
 
-   coord = coords(rect_id)
+   coord = coords(coords1,coords2)
 
    # String for the message of each point : 
    info_top_left = "Point at top left       :  (" + str(coord[0][0]) + "," + str(coord[0][1]) + ")\n"
@@ -121,25 +134,23 @@ def info_box(rect_id):
 
 
 ##################################
-###    IMAGE FUNCTIONS    ###
+###      IMAGE FUNCTIONS       ###
 ##################################
 
 def crop_image(rect_id):
-    global current_image_number, images, first_coords, second_coords
+    global current_image_number, images
     coord1 = boxes[rect_id][0] 
     coord2 = boxes[rect_id][1] 
     height = boxes[rect_id][2]
     width =  boxes[rect_id][3]
+
     x1 = coord1[0]
     y1 = coord1[1]
     x2 = coord2[0]
     y2 = coord2[1]
+
     left = min(x1,x2)
-    right = max(x1,x2)
-    bottom = min(y1,y2)
     top = min(y1,y2)
-    h = x1 - x2 
-    w = y1 - y2
 
     new_image = (images[current_image_number]).crop((left,top,left + width, top + height))
 
@@ -154,14 +165,11 @@ def crop_image(rect_id):
 
 
 
-def coords(rect_id): 
-    global boxes
-    coord1 = boxes[rect_id][0] 
-    coord2 = boxes[rect_id][1] 
-    x1 = coord1[0]
-    y1 = coord1[1]
-    x2 = coord2[0]
-    y2 = coord2[1]
+def coords(c1, c2): 
+    x1 = c1[0]
+    y1 = c1[1]
+    x2 = c2[0]
+    y2 = c2[1]
 
     #      [      top left,                top right,              bottom left,              bottom right       ]
     return [(min(x1,x2),max(y1,y2)), (max(x1,x2),max(y1,y2)) , (min(x1,x2),min(y1,y2)) , (max(x1,x2),min(y1,y2))]
@@ -279,34 +287,35 @@ def replace_category(str1, str2):
     new = str1 
     old = str2
 
-    if (old in list_category):
-       
-            #categories.json
-            myJsonFile = open("categories.json")
+    if(new!='Enter the new name of the category you want to change'):
+        if (old in list_category):
+           
+                #categories.json
+                myJsonFile = open("categories.json")
 
-            list_category = json.load(myJsonFile)["categories"]
-            
-            if (new not in list_category) :
-                for i in range(len(list_category)) :
-                    if  list_category[i] == old :
-                        list_category[i] = new
-            else :
-                list_category.remove(old)
-            
-            json_object = json.dumps({'categories': list_category}, indent = 4)
-            with open("categories.json", "w") as outfile:
-                outfile.write(json_object)
-            
-            #modify the boxes
-            for b, box  in boxes.items() :
-                if box[5] == old :
-                    box[5] = new
+                list_category = json.load(myJsonFile)["categories"]
+                
+                if (new not in list_category) :
+                    for i in range(len(list_category)) :
+                        if  list_category[i] == old :
+                            list_category[i] = new
+                else :
+                    list_category.remove(old)
+                
+                json_object = json.dumps({'categories': list_category}, indent = 4)
+                with open("categories.json", "w") as outfile:
+                    outfile.write(json_object)
+                
+                #modify the boxes
+                for b, box  in boxes.items() :
+                    if box[5] == old :
+                        box[5] = new
 
-            #rewrite the json
-            generate_json()
+                #rewrite the json
+                generate_json()
 
-    else :
-        messagebox.showinfo("Error", "You tried to replace a category that doesn't exist.")
+        else :
+            messagebox.showinfo("Error", "You tried to replace a category that doesn't exist.")
 
 
 
@@ -337,6 +346,7 @@ def update_image():
         button2.destroy()
         canvas.destroy()
 
+# Function to handle the windows to import a category
 def import_category():
     global selection, entry_import_cat
     import_cat = tk.Toplevel(selection)
@@ -357,45 +367,62 @@ def import_category():
     validate_button = tk.Button(import_cat,text="Validate", command = lambda:[validate_path(), selection.destroy(), category_selection()])
     validate_button.pack(pady=5,side=tk.BOTTOM)
 
+# Function to import categories from a list (it is used after reading a json or a csv file)
+def import_categories_from_list(list_new_categories):
+    global list_category
+    myJsonFile = open("categories.json")
+    list_category = json.load(myJsonFile)["categories"]
+
+    if ("No Category" not in list_category) :
+        list_category.append("No Category")
+
+    for c in list_new_categories:
+        if c not in list_category :
+            list_category.append(c)
+            
+    json_object = json.dumps({'categories': list_category}, indent = 4)
+    with open("categories.json", "w") as outfile:
+        outfile.write(json_object)
+            
+    myJsonFile.close()
+
+# Function to import categories from a file corresponding to a path
 def validate_path():
     global entry_import_cat, list_category
     
     try :
-        filepath =entry_import_cat.get()
-        f = open(filepath)
+        filepath = entry_import_cat.get()
         if filepath.endswith(".json") :
-                        
+            f = open(filepath)
+
             data = json.load(f)
-            
-            myJsonFile = open("categories.json")
-            list_category = json.load(myJsonFile)["categories"]
-
-            if ("No Category" not in list_category) :
-                list_category.append("No Category")
-
-            for c in data['categories'] :
-                if c not in list_category :
-                    list_category.append(c)
-            
-            json_object = json.dumps({'categories': list_category}, indent = 4)
-            with open("categories.json", "w") as outfile:
-                outfile.write(json_object)
-            
-            myJsonFile.close()
+            import_categories_from_list(data["categories"])           
             
             f.close()
 
             messagebox.showinfo("Successful Retrieval","The categories have been successfully added from the file you mentioned in the path.")
 
         elif filepath.endswith(".csv") :
-            print("okay csv")
+            categories_from_csv = []
+            with open(filepath) as csv_file:
+                reader = csv.reader(csv_file, delimiter=',')
+                for row in reader:
+                    for i in row:
+                        if(i!=''):
+                            categories_from_csv.append(i)
+
+
+            import_categories_from_list(categories_from_csv)           
+
+            messagebox.showinfo("Successful Retrieval","The categories have been successfully added from the file you mentioned in the path.")
+
+
         else :
             messagebox.showinfo("Unsuccessful Retrieval","The file is not a json or a csv one. Hence, we cannot extract the categories from it. Please make sure to use a json or a csv file.")
+      
 
-        #data = json.load(f)
-        
     except :    
-        messagebox.showinfo("Unsuccessful Retrieval","The file has not been found. Please make sure the path exists and the extension is .json or .csv.")
+        messagebox.showinfo("Unsuccessful Retrieval","The file has not been found or isn't well written. Please make sure the path exists and the extension is .json or .csv.")
 
 
 ##################################
@@ -446,6 +473,89 @@ def function_focusout(text_entry, text):
         text_entry.insert(0, text)
         text_entry.config(fg = 'grey')
 
+############################
+#### INTERSECTION IMAGES ###
+############################
+
+# Function to know if two boxes intersect
+def intersects(box1,box2):
+    global coords1_box1, coords2_box1, coords1_box2, coords2_box2
+
+    coords1_box1 = box1[0]
+    coords2_box1 = box1[1]
+
+    coords1_box2 = box2[0]
+    coords2_box2 = box2[1]
+
+
+    coords_box1 = coords(coords1_box1,coords2_box1)
+    coords_box2 = coords(coords1_box2,coords2_box2)
+
+    p1 = Polygon([coords_box1[0], coords_box1[1],coords_box1[3],coords_box1[2]])
+    p2 = Polygon([coords_box2[0], coords_box2[1],coords_box2[3],coords_box2[2]])
+    
+    return p1.intersects(p2)
+
+# Function to know the percentage of the intersection between two boxes
+def percetage_intersection(box1,box2):
+    global coords1_box1, coords2_box1, coords1_box2, coords2_box2
+
+    coords1_box1 = box1[0]
+    coords2_box1 = box1[1]
+
+    coords1_box2 = box2[0]
+    coords2_box2 = box2[1]
+
+    coords_box1 = coords(coords1_box1,coords2_box1)
+    coords_box2 = coords(coords1_box2,coords2_box2)
+
+    p1 = Polygon([coords_box1[0], coords_box1[1],coords_box1[3],coords_box1[2]])
+    p2 = Polygon([coords_box2[0], coords_box2[1],coords_box2[3],coords_box2[2]])
+
+    return (p1.intersection(p2).area / p1.area) * 100
+
+
+# Function to know what is the total percentage of the intersection of a box with the others
+def sum_percentage(box):
+    global boxes
+
+
+    nb_image = box[6]
+    nb_rect = box[7]
+    res = 0
+
+
+    for key,value in boxes.items():
+        if((value[6]==nb_image) and (value[7]!=nb_rect)):
+            res = res + percetage_intersection(box,value)
+
+    return res
+
+# Function to know if a box is strictly included in another or if a box is strictly included in this box
+def total_intersection(box):
+    global boxes
+
+    nb_image = box[6]
+    nb_rect = box[7]
+
+    for key,value in boxes.items():
+        if((value[6]==nb_image) and (value[7]!=nb_rect)):
+            if((percetage_intersection(box,value)==100.0)or (percetage_intersection(value,box)==100.0)):
+                return True
+
+    return False
+
+def check_intersections():
+    global boxes, current_image_number,canvas
+    for b,value in boxes.copy().items():
+        if((value[6]==current_image_number)and(sum_percentage(value)>20.0)):
+            canvas.delete(b)
+            del boxes[b]
+            messagebox.showinfo("Information","A box has been discarded because its total intersection with the other boxes > 20%")
+
+
+
+
 ########################
 ###  GENERATION JSON ###   
 ########################
@@ -457,7 +567,7 @@ def convert_image_to_json(path,id):
     data_image = []
     for key,value in boxes.items():
         if(value[6]==id):
-            data_image.append(convert_box_to_json(value[2],value[3],value[4],value[5], value[7]))
+            data_image.append(convert_box_to_json(value[0],value[1],value[2],value[3],value[4],value[5], value[7]))
     if(data_image == []):
         return "null"
 
@@ -466,9 +576,20 @@ def convert_image_to_json(path,id):
             
         
 # Function to convert the information of a single box into a dictionnary
-def convert_box_to_json(height,width,area,category, rect_id):
-    # Rajouter les coordonnées des points ??? 
-    return {'height' : height, 'width' : width, 'area' : area, 'category' : category, 'path' : "dataset/annotated_images/image" + str(rect_id) + ".png"}
+def convert_box_to_json(co1,co2,height,width,area,category, rect_id):
+    global boxes
+
+    coord = coords(co1,co2)
+
+    return {'point top left' : coord[0],
+            'point top right' : coord[1],
+            'point bottom left' : coord[2],
+            'point bottom right' : coord[3],
+            'height' : height, 
+            'width' : width, 
+            'area' : area, 
+            'category' : category, 
+            'path' : "dataset/annotated_images/image" + str(rect_id) + ".png"}
 
 # Function to generate the whole json
 def generate_json():
@@ -494,7 +615,9 @@ def generate_category_json():
       
     # Writing to sample.json
     with open("categories.json", "w") as outfile:
-        outfile.write(json_object)     
+        outfile.write(json_object)  
+
+
 
 
 #########################
@@ -529,41 +652,24 @@ welcome_message.pack()
 welcome_message.configure(background='pink')
 
 
-
 # Function called after pressing the button "Start"
 def start_app():
-    global image_id, canvas, images_resized ,   list_path, button1, button2, images
+    global image_id, canvas, images_resized , list_path, button1, button2, images
     button_start.destroy()
     generate_category_json()
 
-    img = ImageTk.PhotoImage(Image.open("dataset/with_mask/image_0.png"))
+    list_path = glob.glob("dataset/resized/with_mask/*png") + glob.glob("dataset/resized/without_mask/*png")  # All the paths
+    list_path = list_path[0:7] 
+    images = [Image.open(i) for i in  list_path] #All the images
+    images_resized = [ImageTk.PhotoImage(i) for i in images] 
+
+
+    img = ImageTk.PhotoImage(images[0])
 
     canvas= tk.Canvas(root, width=img.width(), height=img.height(),
                        borderwidth=0, highlightthickness=0)
-    #canvas.configure(background = "pink")
+    canvas.configure(background = "pink")
 
-
-
-    #print("Generation of the images ...")
-    #print("It might take a few seconds.")
-
-    list_path = glob.glob("dataset/with_mask/*jpg") + glob.glob("dataset/without_mask/*jpg") + glob.glob("dataset/with_mask/*png") + glob.glob("dataset/without_mask/*png")  # All the paths
-    #list_path = list_path[0:7] 
-    images = [Image.open(i) for i in    list_path] #All the images
-
-    for i in range(len(images)):
-        ig = images[i]
-        width_ig, height_ig = ig.size
-
-        if(width_ig > 500 or height_ig >500): # ie if an image is too big ==> We need to resize it.
-            scale = max(width_ig,height_ig)/500
-            height_ig = int(height_ig / scale)
-            width_ig = int(width_ig / scale)
-            images[i] = ig.resize((width_ig,height_ig))
-
-    images_resized = [ImageTk.PhotoImage(i) for i in images] #All the resized images
-
-    #print("All the images have been generated.")
 
     image_id = canvas.create_image(0, 0, anchor='nw', image=images_resized[current_image_number])
 
@@ -573,7 +679,6 @@ def start_app():
     canvas.bind("<Double-1>", double_click)
 
     canvas.pack(expand=True)
-
 
 
     #########################
