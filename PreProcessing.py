@@ -11,7 +11,7 @@ for i in extensions:
     list_path_with_mask = list_path_with_mask + glob.glob("dataset/with_mask/*"+i) 
 
 for i in extensions:
-    list_path_without_mask = list_path_without_mask + glob.glob("dataset/with_mask/*"+i) 
+    list_path_without_mask = list_path_without_mask + glob.glob("dataset/without_mask/*"+i) 
 
 images_with_mask = [Image.open(i) for i in list_path_with_mask] #All the images with mask
 

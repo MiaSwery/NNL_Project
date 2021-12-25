@@ -338,13 +338,18 @@ def update_image():
 
     else: # If there are no more images to annotate.
         canvas.delete("all")
-        generate_json()
+        #generate_json()
 
-        messagebox.showinfo("Information", "You annoted every images.\nThe json file has been generated.")
+        messagebox.showinfo("Information", "You annoted every images.")
 
         button1.destroy()
         button2.destroy()
         canvas.destroy()
+    generate_json()
+
+def help():
+    messagebox.showinfo("HELP", "You can create a box by first clicking one extrema of the area you want to annotate and release it at another extrema.\nTo see information about a box you created, please double click on it.\nThanks for using our program, we hope you will have a pleasant experience ;-)")
+
 
 # Function to handle the windows to import a category
 def import_category():
@@ -659,7 +664,6 @@ def start_app():
     generate_category_json()
 
     list_path = glob.glob("dataset/resized/with_mask/*png") + glob.glob("dataset/resized/without_mask/*png")  # All the paths
-    #list_path = list_path[0:7] 
     images = [Image.open(i) for i in  list_path] #All the images
     images_resized = [ImageTk.PhotoImage(i) for i in images] 
 
@@ -687,8 +691,8 @@ def start_app():
     button1 = tk.Button(root, text="NEXT PICTURE\n-->", bg='white',command=update_image)
     button1.pack(pady=5,side=tk.RIGHT)
 
-    button2 = tk.Button(root, text="SAVE", bg='white')
-    button2.pack(pady=5,side=tk.BOTTOM)
+    button2 = tk.Button(root, text="?", bg='white',command=help)
+    button2.pack(pady=5,side=tk.TOP)
 
 
 
