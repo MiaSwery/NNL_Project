@@ -659,7 +659,7 @@ def start_app():
     generate_category_json()
 
     list_path = glob.glob("dataset/resized/with_mask/*png") + glob.glob("dataset/resized/without_mask/*png")  # All the paths
-    list_path = list_path[0:7] 
+    #list_path = list_path[0:7] 
     images = [Image.open(i) for i in  list_path] #All the images
     images_resized = [ImageTk.PhotoImage(i) for i in images] 
 

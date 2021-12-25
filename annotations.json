@@ -6,49 +6,49 @@
                 "boxes": [
                     {
                         "point top left": [
-                            208,
-                            186
+                            169,
+                            247
                         ],
                         "point top right": [
-                            297,
-                            186
+                            213,
+                            247
                         ],
                         "point bottom left": [
-                            208,
-                            121
+                            169,
+                            197
                         ],
                         "point bottom right": [
-                            297,
-                            121
+                            213,
+                            197
                         ],
-                        "height": 65,
-                        "width": 89,
-                        "area": 5785,
+                        "height": 50,
+                        "width": 44,
+                        "area": 2200,
                         "category": "No Category",
-                        "path": "dataset/annotated_images/image4.png"
+                        "path": "dataset/annotated_images/image6.png"
                     },
                     {
                         "point top left": [
-                            211,
-                            95
+                            82,
+                            177
                         ],
                         "point top right": [
-                            291,
-                            95
+                            269,
+                            177
                         ],
                         "point bottom left": [
-                            211,
-                            58
+                            82,
+                            81
                         ],
                         "point bottom right": [
-                            291,
-                            58
+                            269,
+                            81
                         ],
-                        "height": 37,
-                        "width": 80,
-                        "area": 2960,
+                        "height": 96,
+                        "width": 187,
+                        "area": 17952,
                         "category": "No Category",
-                        "path": "dataset/annotated_images/image5.png"
+                        "path": "dataset/annotated_images/image7.png"
                     }
                 ]
             }
