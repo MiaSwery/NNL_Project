@@ -623,56 +623,23 @@ def generate_category_json():
 
 
 
-
 #########################
 ###    MAIN WINDOW    ###
 #########################
 root = tk.Tk()
 root.wm_title("Image Annotator")
 root.geometry("1000x1000")
-root.configure(background='pink')
-
-
-'''# Add image file
-bg = PhotoImage(file = "mario.png")
-  
-# Create Canvas
-canva = tk.Canvas( root, width = 400,
-                 height = 400)
-  
-canva.pack(fill = "both", expand = True)
-  
-# Display image
-canva.create_image( 0, 0, image = bg, 
-                     anchor = "nw")'''
-
-welcome = "Welcome\n"
-msg = 'Press the button "Start" when you are ready to annotate the images. \n\n' 
-#msg = msg + 'Note : After pressing the button "Start", the images might take a few seconds to be generated. \n\n'
-
-welcome_message = tk.Text(root, height = 35, width = 300)
-welcome_message.insert('end', welcome+'\n')
-welcome_message.insert('end', msg+'\n')
-
-welcome_message.tag_add('welcome','1.0','1.end')
-welcome_message.tag_config('welcome', font='comic 20 bold')  
-welcome_message.tag_configure("welcome", justify='center')
-
-
-welcome_message.tag_add('msg','2.0','2.end')
-welcome_message.tag_config('msg', font='arial 13 normal')
-
-#welcome_message.configure(background='pink')
-welcome_message.config(state= tk.DISABLED)
-welcome_message.pack()
-welcome_message.configure(background='pink')
+root.configure(background='#fbd014')
 
 
 
 # Function called after pressing the button "Start"
 def start_app():
-    global image_id, canvas, images_resized , list_path, button1, button2, images
+    global image_id, canvas, images_resized , list_path, button1, button2, images, mario, button_start, welcome_message
     button_start.destroy()
+    welcome_message.destroy()
+    mario.destroy()
+    root.configure(background='pink')
     generate_category_json()
 
     list_path = glob.glob("dataset/resized/with_mask/*png") + glob.glob("dataset/resized/without_mask/*png")  # All the paths
@@ -700,16 +667,51 @@ def start_app():
     #########################
     ###      BUTTONS      ###
     #########################
-    button1 = tk.Button(root, text="NEXT PICTURE\n-->", bg='white',command=update_image)
+    button1 = tk.Button(root, text="NEXT PICTURE\n-->", bg='#9aeeeb',command=update_image)
     button1.pack(pady=5,side=tk.RIGHT)
 
-    button2 = tk.Button(root, text="?", bg='white',command=help)
+    button2 = tk.Button(root, text="HELP ?", bg='#9aeeeb',command=help)
     button2.pack(pady=5,side=tk.TOP)
 
 
+# Display Buttons
+#button_start = tk.Button(root, text="HERE WE GO !", fg='white', bg='#6000e4',command=start_app)
 
-button_start = tk.Button(root, text="START", bg='white',command=lambda:[welcome_message.destroy(), start_app()])
-button_start.pack(pady=5,side=tk.BOTTOM)
+#button1_canva = mario.create_window( 300,0, anchor = "nw", window = button_start)
+
+button_start = tk.Button(root, text="HERE WE GO !", fg='white', bg='#6000e4',command=start_app)
+button_start.pack(pady=5,side=tk.TOP)
+
+
+
+
+
+#Add image file
+bg = ImageTk.PhotoImage(file = "mario_resized.png")
+mario = tk.Canvas( root, width = bg.width(), height = bg.height())
+mario.configure(background='#fbd014')
+mario.pack(expand = True)
+# Display image
+mario.create_image( 0, 0, image = bg,
+                     anchor = "nw")
+#mario.create_text(500, 100, text="Welcome!", font=("Helvetica", 50), fill="#6000e4", anchor="s")
+
+
+welcome = "Welcome!"
+welcome_message = tk.Text(root, height = 5, width = 300)
+welcome_message.insert('end', welcome+'\n')
+welcome_message.tag_add('welcome','1.0','1.end')
+welcome_message.tag_config('welcome', font='Helvetica 20 bold')
+welcome_message.tag_configure("welcome", justify='center')
+welcome_message.tag_configure("welcome", foreground="#6000e4")
+
+
+#welcome_message.configure(background='pink')
+welcome_message.config(state= tk.DISABLED)
+welcome_message.pack(side = tk.BOTTOM)
+welcome_message.configure(background='#fbd014')
 
 # show window
 root.mainloop()
+
+
