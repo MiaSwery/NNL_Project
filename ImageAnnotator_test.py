@@ -629,25 +629,15 @@ def generate_category_json():
 root = tk.Tk()
 root.wm_title("Image Annotator")
 root.geometry("1000x1000")
-root.configure(background='pink')
+root.configure(background='#fbd014')
 
-
-#Add image file
-bg = PhotoImage(file = "mario_resized.png")
-mario = tk.Canvas( root, width = 1000,
-                 height = 1000)
-mario.configure(background='#fbd014')
-mario.pack(fill = "both", expand = True)
-# Display image
-mario.create_image( 100, 100, image = bg,
-                     anchor = "nw")
-mario.create_text(500, 100, text="Welcome!", font=("Helvetica", 50), fill="#6000e4")
 
 
 # Function called after pressing the button "Start"
 def start_app():
-    global image_id, canvas, images_resized , list_path, button1, button2, images, mario
+    global image_id, canvas, images_resized , list_path, button1, button2, images, mario, button_start
     button_start.destroy()
+    root.configure(background='pink')
     mario.destroy()
     generate_category_json()
 
@@ -684,9 +674,27 @@ def start_app():
 
 
 # Display Buttons
-button_start = tk.Button(root, text="HERE WE GO !", fg='white', bg='#6000e4',command=start_app)
+#button_start = tk.Button(root, text="HERE WE GO !", fg='white', bg='#6000e4',command=start_app)
 
-button1_canva = mario.create_window( 415, 900, anchor = "nw", window = button_start)
+#button1_canva = mario.create_window( 300,0, anchor = "nw", window = button_start)
+
+button_start = tk.Button(root, text="HERE WE GO !", fg='white', bg='#6000e4',command=start_app)
+button_start.pack(pady=5,side=tk.TOP)
+
+
+
+
+
+#Add image file
+bg = PhotoImage(file = "mario_resized.png")
+mario = tk.Canvas( root, width = 1000, height = bg.height())
+mario.configure(background='#fbd014')
+mario.pack(fill = "both", expand = True, side=tk.BOTTOM, anchor=tk.CENTER)
+# Display image
+mario.create_image( 100, 100, image = bg,
+                     anchor = "nw")
+mario.create_text(500, 100, text="Welcome!", font=("Helvetica", 50), fill="#6000e4", anchor=tk.CENTER)
+
 
 # show window
 root.mainloop()
