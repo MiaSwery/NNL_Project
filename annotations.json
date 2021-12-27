@@ -3,61 +3,13 @@
         {
             "image": {
                 "path": "dataset/resized/with_mask/image31.png",
-                "boxes": [
-                    {
-                        "point top left": [
-                            184,
-                            242
-                        ],
-                        "point top right": [
-                            321,
-                            242
-                        ],
-                        "point bottom left": [
-                            184,
-                            148
-                        ],
-                        "point bottom right": [
-                            321,
-                            148
-                        ],
-                        "height": 94,
-                        "width": 137,
-                        "area": 12878,
-                        "category": "No Category",
-                        "path": "dataset/annotated_images/image0.png"
-                    }
-                ]
+                "boxes": "null"
             }
         },
         {
             "image": {
                 "path": "dataset/resized/with_mask/image15.png",
-                "boxes": [
-                    {
-                        "point top left": [
-                            206,
-                            352
-                        ],
-                        "point top right": [
-                            420,
-                            352
-                        ],
-                        "point bottom left": [
-                            206,
-                            211
-                        ],
-                        "point bottom right": [
-                            420,
-                            211
-                        ],
-                        "height": 141,
-                        "width": 214,
-                        "area": 30174,
-                        "category": "No Category",
-                        "path": "dataset/annotated_images/image2.png"
-                    }
-                ]
+                "boxes": "null"
             }
         },
         {
