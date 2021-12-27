@@ -635,10 +635,11 @@ root.configure(background='#fbd014')
 
 # Function called after pressing the button "Start"
 def start_app():
-    global image_id, canvas, images_resized , list_path, button1, button2, images, mario, button_start
+    global image_id, canvas, images_resized , list_path, button1, button2, images, mario, button_start, welcome_message
     button_start.destroy()
-    root.configure(background='pink')
+    welcome_message.destroy()
     mario.destroy()
+    root.configure(background='pink')
     generate_category_json()
 
     list_path = glob.glob("dataset/resized/with_mask/*png") + glob.glob("dataset/resized/without_mask/*png")  # All the paths
@@ -686,15 +687,29 @@ button_start.pack(pady=5,side=tk.TOP)
 
 
 #Add image file
-bg = PhotoImage(file = "mario_resized.png")
-mario = tk.Canvas( root, width = 1000, height = bg.height())
+bg = ImageTk.PhotoImage(file = "mario_resized.png")
+mario = tk.Canvas( root, width = bg.width(), height = bg.height())
 mario.configure(background='#fbd014')
-mario.pack(fill = "both", expand = True, side=tk.BOTTOM, anchor=tk.CENTER)
+mario.pack(expand = True)
 # Display image
-mario.create_image( 100, 100, image = bg,
+mario.create_image( 0, 0, image = bg,
                      anchor = "nw")
-mario.create_text(500, 100, text="Welcome!", font=("Helvetica", 50), fill="#6000e4", anchor=tk.CENTER)
+#mario.create_text(500, 100, text="Welcome!", font=("Helvetica", 50), fill="#6000e4", anchor="s")
 
+
+welcome = "Welcome!"
+welcome_message = tk.Text(root, height = 5, width = 300)
+welcome_message.insert('end', welcome+'\n')
+welcome_message.tag_add('welcome','1.0','1.end')
+welcome_message.tag_config('welcome', font='Helvetica 20 bold')
+welcome_message.tag_configure("welcome", justify='center')
+welcome_message.tag_configure("welcome", foreground="#6000e4")
+
+
+#welcome_message.configure(background='pink')
+welcome_message.config(state= tk.DISABLED)
+welcome_message.pack(side = tk.BOTTOM)
+welcome_message.configure(background='#fbd014')
 
 # show window
 root.mainloop()

@@ -2,37 +2,37 @@
     "data": [
         {
             "image": {
-                "path": "dataset/resized/with_mask/image31.png",
-                "boxes": "null"
+                "path": "dataset/resized/with_mask/image0.png",
+                "boxes": [
+                    {
+                        "point top left": [
+                            163,
+                            309
+                        ],
+                        "point top right": [
+                            357,
+                            309
+                        ],
+                        "point bottom left": [
+                            163,
+                            184
+                        ],
+                        "point bottom right": [
+                            357,
+                            184
+                        ],
+                        "height": 125,
+                        "width": 194,
+                        "area": 24250,
+                        "category": "No Category",
+                        "path": "dataset/annotated_images/image0.png"
+                    }
+                ]
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image15.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image48.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image33.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image12.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image29.png",
+                "path": "dataset/resized/with_mask/image1.png",
                 "boxes": "null"
             }
         },
@@ -44,67 +44,19 @@
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image20.png",
+                "path": "dataset/resized/with_mask/image11.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image18.png",
+                "path": "dataset/resized/with_mask/image12.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image25.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image47.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image34.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image7.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image1.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image4.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image3.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image43.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image38.png",
+                "path": "dataset/resized/with_mask/image13.png",
                 "boxes": "null"
             }
         },
@@ -116,37 +68,133 @@
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image50.png",
+                "path": "dataset/resized/with_mask/image15.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image37.png",
+                "path": "dataset/resized/with_mask/image16.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image45.png",
+                "path": "dataset/resized/with_mask/image17.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image11.png",
+                "path": "dataset/resized/with_mask/image18.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image8.png",
+                "path": "dataset/resized/with_mask/image19.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image40.png",
+                "path": "dataset/resized/with_mask/image2.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image20.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image21.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image22.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image23.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image24.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image25.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image26.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image27.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image28.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image29.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image3.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image30.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image31.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image32.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image33.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image34.png",
                 "boxes": "null"
             }
         },
@@ -164,121 +212,13 @@
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image24.png",
+                "path": "dataset/resized/with_mask/image37.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image42.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image19.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image49.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image27.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image17.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image22.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image16.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image6.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image23.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image13.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image46.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image21.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image41.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image9.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image44.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image2.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image26.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image32.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/with_mask/image28.png",
+                "path": "dataset/resized/with_mask/image38.png",
                 "boxes": "null"
             }
         },
@@ -290,97 +230,109 @@
         },
         {
             "image": {
+                "path": "dataset/resized/with_mask/image4.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image40.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image41.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image42.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image43.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image44.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image45.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image46.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image47.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image48.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/with_mask/image49.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
                 "path": "dataset/resized/with_mask/image5.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image30.png",
+                "path": "dataset/resized/with_mask/image50.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/with_mask/image0.png",
+                "path": "dataset/resized/with_mask/image6.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image31.png",
+                "path": "dataset/resized/with_mask/image7.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image15.png",
+                "path": "dataset/resized/with_mask/image8.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image48.png",
+                "path": "dataset/resized/with_mask/image9.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image33.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image12.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image29.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image10.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image20.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image18.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image25.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image47.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image34.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image7.png",
+                "path": "dataset/resized/without_mask/image0.png",
                 "boxes": "null"
             }
         },
@@ -392,49 +344,7 @@
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image4.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image3.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image43.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image38.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image14.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image50.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image37.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image45.png",
+                "path": "dataset/resized/without_mask/image10.png",
                 "boxes": "null"
             }
         },
@@ -446,13 +356,151 @@
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image8.png",
+                "path": "dataset/resized/without_mask/image12.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image40.png",
+                "path": "dataset/resized/without_mask/image13.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image14.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image15.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image16.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image17.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image18.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image19.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image2.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image20.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image21.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image22.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image23.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image24.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image25.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image26.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image27.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image28.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image29.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image3.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image30.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image31.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image32.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image33.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image34.png",
                 "boxes": "null"
             }
         },
@@ -470,121 +518,13 @@
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image24.png",
+                "path": "dataset/resized/without_mask/image37.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image42.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image19.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image49.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image27.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image17.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image22.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image16.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image6.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image23.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image13.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image46.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image21.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image41.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image9.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image44.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image2.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image26.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image32.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "dataset/resized/without_mask/image28.png",
+                "path": "dataset/resized/without_mask/image38.png",
                 "boxes": "null"
             }
         },
@@ -596,19 +536,103 @@
         },
         {
             "image": {
+                "path": "dataset/resized/without_mask/image4.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image40.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image41.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image42.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image43.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image44.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image45.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image46.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image47.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image48.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image49.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
                 "path": "dataset/resized/without_mask/image5.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image30.png",
+                "path": "dataset/resized/without_mask/image50.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
-                "path": "dataset/resized/without_mask/image0.png",
+                "path": "dataset/resized/without_mask/image6.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image7.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image8.png",
+                "boxes": "null"
+            }
+        },
+        {
+            "image": {
+                "path": "dataset/resized/without_mask/image9.png",
                 "boxes": "null"
             }
         }
