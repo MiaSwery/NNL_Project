@@ -3,31 +3,7 @@
         {
             "image": {
                 "path": "../img/resized/with_mask/image31.png",
-                "boxes": [
-                    {
-                        "point top left": [
-                            170,
-                            262
-                        ],
-                        "point top right": [
-                            322,
-                            262
-                        ],
-                        "point bottom left": [
-                            170,
-                            141
-                        ],
-                        "point bottom right": [
-                            322,
-                            141
-                        ],
-                        "height": 121,
-                        "width": 152,
-                        "area": 18392,
-                        "category": "No Category",
-                        "path": "../img/annotated_images/image0.png"
-                    }
-                ]
+                "boxes": "null"
             }
         },
         {

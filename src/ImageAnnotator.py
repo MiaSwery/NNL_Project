@@ -115,8 +115,6 @@ def info_box(rect_id):
    text.config(state= tk.DISABLED)
    text.pack()
 
-   #Label(popup, text= message).place(x=20,y=20)
-
    # Button to quit the popup window : 
    exit_button = tk.Button(popup, text="OK", command=popup.destroy)
    exit_button.pack(pady=5 , side=tk.BOTTOM)
@@ -308,7 +306,10 @@ def replace_category(str1, str2):
                 generate_json()
 
         else :
-            messagebox.showinfo("Error", "You tried to replace a category that doesn't exist.")
+            if (str1 == "No Category") : 
+                messagebox.showinfo("Error", "You tried to delete a category that doesn't exist.")
+            else :
+                messagebox.showinfo("Error", "You tried to replace a category that doesn't exist.")
 
 
 
