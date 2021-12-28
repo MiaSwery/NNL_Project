@@ -7,7 +7,6 @@ import os
 import csv
 from shapely.geometry import Polygon
 
-
 first_coords = None
 second_coords = None
 
@@ -57,7 +56,6 @@ def release_click(event):
 
     check_intersections()
 
-
 # Function to handle a double click
 def double_click(event):
     global boxes, rect_id, current_image_number
@@ -76,9 +74,6 @@ def double_click(event):
                 
                 rect_id = key
                 info_box(key)
-
-
-
 
 # Function to create a popup to tell information about a box created. 
 def info_box(rect_id):
@@ -199,7 +194,6 @@ def category_selection():
 
     # Button to import categories from a json or csv file
     import_category_button = tk.Button(selection,text="Import categories", command=import_category)
-    #import_category_button.pack(pady=5,side=tk.TOP)
     import_category_button.place(x=575, y=0)
 
     # Button to delete a category
@@ -346,6 +340,7 @@ def update_image():
         canvas.destroy()
     generate_json()
 
+#Function to pop-up a Help window
 def help():
     messagebox.showinfo("HELP", "You can create a box by first clicking one end of the area you want to annotate and release it at another end.\nTo see information about a box you created, please double click on it.\nThanks for using our program, we hope you will have a pleasant experience ;-)")
 
@@ -549,6 +544,7 @@ def total_intersection(box):
 
     return False
 
+# Function to check if there is an intersection > 20% of the area
 def check_intersections():
     global boxes, current_image_number,canvas
     for b,value in boxes.copy().items():
@@ -640,6 +636,11 @@ def start_app():
     root.configure(background='pink')
     generate_category_json()
 
+    # Deleting the previous annotated images 
+    annotated = glob.glob('../img/annotated_images/*')
+    for f in annotated:
+        os.remove(f)
+
     list_path = glob.glob("../img/resized/with_mask/*png") + glob.glob("../img/resized/without_mask/*png")  # All the paths
     images = [Image.open(i) for i in  list_path] #All the images
     images_resized = [ImageTk.PhotoImage(i) for i in images] 
@@ -673,15 +674,8 @@ def start_app():
 
 
 # Display Buttons
-#button_start = tk.Button(root, text="HERE WE GO !", fg='white', bg='#6000e4',command=start_app)
-
-#button1_canva = mario.create_window( 300,0, anchor = "nw", window = button_start)
-
 button_start = tk.Button(root, text="HERE WE GO !", fg='white', bg='#6000e4',command=start_app)
 button_start.pack(pady=5,side=tk.TOP)
-
-
-
 
 
 #Add image file
@@ -692,8 +686,6 @@ mario.pack(expand = True)
 # Display image
 mario.create_image( 0, 0, image = bg,
                      anchor = "nw")
-#mario.create_text(500, 100, text="Welcome!", font=("Helvetica", 50), fill="#6000e4", anchor="s")
-
 
 welcome = "Welcome!"
 welcome_message = tk.Text(root, height = 5, width = 300)

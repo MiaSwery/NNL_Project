@@ -6,49 +6,26 @@
                 "boxes": [
                     {
                         "point top left": [
-                            165,
-                            226
+                            170,
+                            262
                         ],
                         "point top right": [
-                            274,
-                            226
+                            322,
+                            262
                         ],
                         "point bottom left": [
-                            165,
-                            139
+                            170,
+                            141
                         ],
                         "point bottom right": [
-                            274,
-                            139
+                            322,
+                            141
                         ],
-                        "height": 87,
-                        "width": 109,
-                        "area": 9483,
+                        "height": 121,
+                        "width": 152,
+                        "area": 18392,
                         "category": "No Category",
                         "path": "../img/annotated_images/image0.png"
-                    },
-                    {
-                        "point top left": [
-                            286,
-                            262
-                        ],
-                        "point top right": [
-                            324,
-                            262
-                        ],
-                        "point bottom left": [
-                            286,
-                            233
-                        ],
-                        "point bottom right": [
-                            324,
-                            233
-                        ],
-                        "height": 29,
-                        "width": 38,
-                        "area": 1102,
-                        "category": "No Category",
-                        "path": "../img/annotated_images/image2.png"
                     }
                 ]
             }
@@ -56,31 +33,7 @@
         {
             "image": {
                 "path": "../img/resized/with_mask/image15.png",
-                "boxes": [
-                    {
-                        "point top left": [
-                            160,
-                            340
-                        ],
-                        "point top right": [
-                            331,
-                            340
-                        ],
-                        "point bottom left": [
-                            160,
-                            214
-                        ],
-                        "point bottom right": [
-                            331,
-                            214
-                        ],
-                        "height": 126,
-                        "width": 171,
-                        "area": 21546,
-                        "category": "No Category",
-                        "path": "../img/annotated_images/image3.png"
-                    }
-                ]
+                "boxes": "null"
             }
         },
         {
