@@ -558,8 +558,6 @@ def check_intersections():
             messagebox.showinfo("Information","A box has been discarded because its total intersection with the other boxes > 20%")
 
 
-
-
 ########################
 ###  GENERATION JSON ###   
 ########################

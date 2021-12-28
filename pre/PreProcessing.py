@@ -8,10 +8,10 @@ list_path_with_mask = [] # All the paths of the images with mask
 list_path_without_mask = [] # All the paths of the images without mask
 
 for i in extensions:
-    list_path_with_mask = list_path_with_mask + glob.glob("dataset/with_mask/*"+i) 
+    list_path_with_mask = list_path_with_mask + glob.glob("../img/with_mask/*"+i) 
 
 for i in extensions:
-    list_path_without_mask = list_path_without_mask + glob.glob("dataset/without_mask/*"+i) 
+    list_path_without_mask = list_path_without_mask + glob.glob("../img/without_mask/*"+i) 
 
 images_with_mask = [Image.open(i) for i in list_path_with_mask] #All the images with mask
 
@@ -33,7 +33,7 @@ def resize(list_images,string):
             new_images.append(ig)
       
 
-        new_images[i].save("dataset/resized/" + string + "/image" + str(i) +".png")
+        new_images[i].save("../img/resized/" + string + "/image" + str(i) +".png")
 
 
 
