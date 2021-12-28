@@ -154,13 +154,13 @@ def crop_image(rect_id):
     new_image = (images[current_image_number]).crop((left,top,left + width, top + height))
 
     try : 
-        new_image.save("dataset/annotated_images/image" + str(rect_id) +".png")
+        new_image.save("../img/annotated_images/image" + str(rect_id) +".png")
     except :
         directory = "annotated_images"
-        parent_directory = "dataset/"
+        parent_directory = "../img/"
         path = os.path.join(parent_directory, directory)
         os.mkdir(path)
-        new_image.save("dataset/annotated_images/image" + str(rect_id) +".png")
+        new_image.save("../img/annotated_images/image" + str(rect_id) +".png")
 
 
 
@@ -593,7 +593,7 @@ def convert_box_to_json(co1,co2,height,width,area,category, rect_id):
             'width' : width, 
             'area' : area, 
             'category' : category, 
-            'path' : "dataset/annotated_images/image" + str(rect_id) + ".png"}
+            'path' : "../img/annotated_images/image" + str(rect_id) + ".png"}
 
 # Function to generate the whole json
 def generate_json():
@@ -642,7 +642,7 @@ def start_app():
     root.configure(background='pink')
     generate_category_json()
 
-    list_path = glob.glob("dataset/resized/with_mask/*png") + glob.glob("dataset/resized/without_mask/*png")  # All the paths
+    list_path = glob.glob("../img/resized/with_mask/*png") + glob.glob("../img/resized/without_mask/*png")  # All the paths
     images = [Image.open(i) for i in  list_path] #All the images
     images_resized = [ImageTk.PhotoImage(i) for i in images] 
 
@@ -670,7 +670,7 @@ def start_app():
     button1 = tk.Button(root, text="NEXT PICTURE\n-->", bg='#9aeeeb',command=update_image)
     button1.pack(pady=5,side=tk.RIGHT)
 
-    button2 = tk.Button(root, text="HELP ?", bg='#9aeeeb',command=help)
+    button2 = tk.Button(root, text="HELP ME !", bg='#9aeeeb',command=help)
     button2.pack(pady=5,side=tk.TOP)
 
 
