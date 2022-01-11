@@ -131,29 +131,31 @@ def info_box(rect_id):
 
 def crop_image(rect_id):
     global current_image_number, images
-    coord1 = boxes[rect_id][0] 
-    coord2 = boxes[rect_id][1] 
+    coord1 = boxes[rect_id][0] # top left
+    coord2 = boxes[rect_id][1] # top right
     height = boxes[rect_id][2]
     width =  boxes[rect_id][3]
 
-    x1 = coord1[0]
-    y1 = coord1[1]
-    x2 = coord2[0]
-    y2 = coord2[1]
+    x1 = coord1[0]  
+    y1 = coord1[1]  
+    x2 = coord2[0]  
+    y2 = coord2[1]  
 
     left = min(x1,x2)
     top = min(y1,y2)
 
     new_image = (images[current_image_number]).crop((left,top,left + width, top + height))
+    name_initial_picture = os.path.splitext(os.path.basename(list_path[current_image_number]))[0]
+    new_name_picture = name_initial_picture + "-bb-" + str(coord1[0]) +"x" + str(coord1[1]) +"-" + str(width) + "-" + str(height)
 
     try : 
-        new_image.save("../img/annotated_images/image" + str(rect_id) +".png")
+        new_image.save("../img/annotated_images/" + new_name_picture +".png")
     except :
         directory = "annotated_images"
         parent_directory = "../img/"
         path = os.path.join(parent_directory, directory)
         os.mkdir(path)
-        new_image.save("../img/annotated_images/image" + str(rect_id) +".png")
+        new_image.save("../img/annotated_images/" + new_name_picture +".png")
 
 
 
@@ -164,7 +166,7 @@ def coords(c1, c2):
     y2 = c2[1]
 
     #      [      top left,                top right,              bottom left,              bottom right       ]
-    return [(min(x1,x2),max(y1,y2)), (max(x1,x2),max(y1,y2)) , (min(x1,x2),min(y1,y2)) , (max(x1,x2),min(y1,y2))]
+    return [(min(x1,x2),min(y1,y2)), (max(x1,x2),min(y1,y2)) , (min(x1,x2),max(y1,y2)) , (max(x1,x2),max(y1,y2))]
 
 
 
