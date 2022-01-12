@@ -3,31 +3,7 @@
         {
             "image": {
                 "path": "../img/resized/with_mask\\image0.png",
-                "boxes": [
-                    {
-                        "point top left": [
-                            160,
-                            169
-                        ],
-                        "point top right": [
-                            381,
-                            169
-                        ],
-                        "point bottom left": [
-                            160,
-                            330
-                        ],
-                        "point bottom right": [
-                            381,
-                            330
-                        ],
-                        "height": 161,
-                        "width": 221,
-                        "area": 35581,
-                        "category": "No Category",
-                        "path": "../img/annotated_images/image0.png"
-                    }
-                ]
+                "boxes": "null"
             }
         },
         {
@@ -297,12 +273,6 @@
         {
             "image": {
                 "path": "../img/resized/with_mask\\image5.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image50.png",
                 "boxes": "null"
             }
         },
@@ -603,12 +573,6 @@
         {
             "image": {
                 "path": "../img/resized/without_mask\\image5.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image50.png",
                 "boxes": "null"
             }
         },
