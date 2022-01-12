@@ -148,6 +148,8 @@ def crop_image(rect_id):
     name_initial_picture = os.path.splitext(os.path.basename(list_path[current_image_number]))[0]
     new_name_picture = name_initial_picture + "-bb-" + str(coord1[0]) +"x" + str(coord1[1]) +"-" + str(width) + "-" + str(height)
 
+    new_image = new_image.resize((180,180))
+
     try : 
         new_image.save("../img/annotated_images/" + new_name_picture +".png")
     except :

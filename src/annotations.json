@@ -3,13 +3,61 @@
         {
             "image": {
                 "path": "../img/resized/with_mask/image31.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            161,
+                            140
+                        ],
+                        "point top right": [
+                            316,
+                            140
+                        ],
+                        "point bottom left": [
+                            161,
+                            260
+                        ],
+                        "point bottom right": [
+                            316,
+                            260
+                        ],
+                        "height": 120,
+                        "width": 155,
+                        "area": 18600,
+                        "category": "No Category",
+                        "path": "../img/annotated_images/image0.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "path": "../img/resized/with_mask/image15.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            136,
+                            206
+                        ],
+                        "point top right": [
+                            363,
+                            206
+                        ],
+                        "point bottom left": [
+                            136,
+                            332
+                        ],
+                        "point bottom right": [
+                            363,
+                            332
+                        ],
+                        "height": 126,
+                        "width": 227,
+                        "area": 28602,
+                        "category": "No Category",
+                        "path": "../img/annotated_images/image2.png"
+                    }
+                ]
             }
         },
         {
