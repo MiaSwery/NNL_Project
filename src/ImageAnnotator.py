@@ -48,7 +48,7 @@ def release_click(event):
                                       dash=(2,2), fill='', outline='red')
                 canvas.coords(rect_id, first_coords[0], first_coords[1], second_coords[0], second_coords[1])
                 boxes[rect_id]= new_box # we add a box in our dictionnary
-                crop_image(rect_id)
+                #crop_image(rect_id)
                 info_box(rect_id)
 
         else:
@@ -130,11 +130,13 @@ def info_box(rect_id):
 ##################################
 
 def crop_image(rect_id):
-    global current_image_number, images
-    coord1 = boxes[rect_id][0] # top left
-    coord2 = boxes[rect_id][1] # top right
-    height = boxes[rect_id][2]
-    width =  boxes[rect_id][3]
+    global images
+    coord1   = boxes[rect_id][0] # top left
+    coord2   = boxes[rect_id][1] # top right
+    height   = boxes[rect_id][2]
+    width    = boxes[rect_id][3]
+    category = boxes[rect_id][5]
+    nb       = boxes[rect_id][6]
 
     x1 = coord1[0]  
     y1 = coord1[1]  
@@ -144,20 +146,21 @@ def crop_image(rect_id):
     left = min(x1,x2)
     top = min(y1,y2)
 
-    new_image = (images[current_image_number]).crop((left,top,left + width, top + height))
-    name_initial_picture = os.path.splitext(os.path.basename(list_path[current_image_number]))[0]
+    new_image = (images[nb]).crop((left,top,left + width, top + height))
+    name_initial_picture = os.path.splitext(os.path.basename(list_path[nb]))[0]
     new_name_picture = name_initial_picture + "-bb-" + str(coord1[0]) +"x" + str(coord1[1]) +"-" + str(width) + "-" + str(height)
 
+   
     new_image = new_image.resize((180,180))
 
     try : 
-        new_image.save("../img/annotated_images/" + new_name_picture +".png")
+        new_image.save("../img/annotated_images/" + category + "/" + new_name_picture +".png")
     except :
-        directory = "annotated_images"
-        parent_directory = "../img/"
+        directory = category
+        parent_directory = "../img/annotated_images"
         path = os.path.join(parent_directory, directory)
         os.mkdir(path)
-        new_image.save("../img/annotated_images/" + new_name_picture +".png")
+        new_image.save("../img/annotated_images/" + category + "/" + new_name_picture +".png")
 
 
 
@@ -319,7 +322,7 @@ def replace_category(str1, str2):
 
 # Function to update the image when we decide to go to the next image
 def update_image():
-    global current_image_number, rect_id, button1, button2,canvas
+    global current_image_number, rect_id, button1, button2,canvas, boxes
 
     for key,value in boxes.items(): # Removing the draw of the boxes of the previous image
         if(value[6]==current_image_number):
@@ -336,14 +339,18 @@ def update_image():
 
     else: # If there are no more images to annotate.
         canvas.delete("all")
-        #generate_json()
+        generate_json()
+
+        for key,value in boxes.items():
+       		crop_image(key)
+
 
         messagebox.showinfo("Information", "You annoted every images.")
 
         button1.destroy()
         button2.destroy()
         canvas.destroy()
-    generate_json()
+    #generate_json()
 
 #Function to pop-up a Help window
 def help():
@@ -564,13 +571,13 @@ def check_intersections():
 ########################
 
 # Function to get all the boxes of an image and convert them into a dictionnary 
-def convert_image_to_json(path,id):
+def convert_image_to_json(nameimage,id):
     global boxes
 
     data_image = []
     for key,value in boxes.items():
         if(value[6]==id):
-            data_image.append(convert_box_to_json(value[0],value[1],value[2],value[3],value[4],value[5], value[7]))
+            data_image.append(convert_box_to_json(value[0],value[1],value[2],value[3],value[4],value[5], value[7],nameimage))
     if(data_image == []):
         return "null"
 
@@ -579,10 +586,12 @@ def convert_image_to_json(path,id):
             
         
 # Function to convert the information of a single box into a dictionnary
-def convert_box_to_json(co1,co2,height,width,area,category, rect_id):
+def convert_box_to_json(co1,co2,height,width,area,category, rect_id,nameimage):
     global boxes
 
     coord = coords(co1,co2)
+
+    new_name_picture = nameimage + "-bb" + str(coord[0][0]) + "x" + str(coord[0][1]) + "-" + str(width) + "-" + str(height)
 
     return {'point top left' : coord[0],
             'point top right' : coord[1],
@@ -592,7 +601,8 @@ def convert_box_to_json(co1,co2,height,width,area,category, rect_id):
             'width' : width, 
             'area' : area, 
             'category' : category, 
-            'path' : "../img/annotated_images/image" + str(rect_id) + ".png"}
+            'name'	: new_name_picture,
+            'path' : "/img/annotated_images/" + new_name_picture + ".png"}
 
 # Function to generate the whole json
 def generate_json():
@@ -601,7 +611,11 @@ def generate_json():
     data_json = []
 
     for i in range(len(list_path)):
-        data_json.append({'image':{'path' : list_path[i], 'boxes' : convert_image_to_json(list_path[i],i)}})
+    	name_initial_picture = os.path.splitext(os.path.basename(list_path[i]))[0]
+    	data_json.append({'image':{
+    		'name' : name_initial_picture,
+    		'path' : list_path[i], 
+    		'boxes' : convert_image_to_json(name_initial_picture,i)}})
       
     # Serializing json 
     json_object = json.dumps({'data': data_json}, indent = 4)
@@ -644,9 +658,14 @@ def start_app():
     # Deleting the previous annotated images 
     annotated = glob.glob('../img/annotated_images/*')
     for f in annotated:
-        os.remove(f)
+    	for g in glob.glob(f+'/*'):
+        	os.remove(g)
+
+    for f in annotated:
+    	os.rmdir(f)
 
     list_path = glob.glob("../img/resized/with_mask/*png") + glob.glob("../img/resized/without_mask/*png")  # All the paths
+    list_path = list_path[0:7]
     images = [Image.open(i) for i in  list_path] #All the images
     images_resized = [ImageTk.PhotoImage(i) for i in images] 
 

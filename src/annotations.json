@@ -2,601 +2,75 @@
     "data": [
         {
             "image": {
+                "name": "image0",
                 "path": "../img/resized/with_mask\\image0.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            231,
+                            90
+                        ],
+                        "point top right": [
+                            299,
+                            90
+                        ],
+                        "point bottom left": [
+                            231,
+                            184
+                        ],
+                        "point bottom right": [
+                            299,
+                            184
+                        ],
+                        "height": 94,
+                        "width": 68,
+                        "area": 6392,
+                        "category": "No Category",
+                        "name": "image0-bb231x90-68-94",
+                        "path": "/img/annotated_images/image0-bb231x90-68-94.png"
+                    }
+                ]
             }
         },
         {
             "image": {
+                "name": "image1",
                 "path": "../img/resized/with_mask\\image1.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
+                "name": "image10",
                 "path": "../img/resized/with_mask\\image10.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
+                "name": "image11",
                 "path": "../img/resized/with_mask\\image11.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
+                "name": "image12",
                 "path": "../img/resized/with_mask\\image12.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
+                "name": "image13",
                 "path": "../img/resized/with_mask\\image13.png",
                 "boxes": "null"
             }
         },
         {
             "image": {
+                "name": "image14",
                 "path": "../img/resized/with_mask\\image14.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image15.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image16.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image17.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image18.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image19.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image2.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image20.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image21.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image22.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image23.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image24.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image25.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image26.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image27.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image28.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image29.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image3.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image30.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image31.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image32.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image33.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image34.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image35.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image36.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image37.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image38.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image39.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image4.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image40.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image41.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image42.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image43.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image44.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image45.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image46.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image47.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image48.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image49.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image5.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image6.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image7.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image8.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/with_mask\\image9.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image0.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image1.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image10.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image11.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image12.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image13.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image14.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image15.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image16.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image17.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image18.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image19.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image2.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image20.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image21.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image22.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image23.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image24.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image25.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image26.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image27.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image28.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image29.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image3.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image30.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image31.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image32.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image33.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image34.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image35.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image36.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image37.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image38.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image39.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image4.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image40.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image41.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image42.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image43.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image44.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image45.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image46.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image47.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image48.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image49.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image5.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image6.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image7.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image8.png",
-                "boxes": "null"
-            }
-        },
-        {
-            "image": {
-                "path": "../img/resized/without_mask\\image9.png",
                 "boxes": "null"
             }
         }

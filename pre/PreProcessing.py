@@ -2,6 +2,7 @@ from PIL import Image, ImageTk
 import glob
 import os
 
+nb_image = 0
 extensions = ['jpg', 'jpeg', 'png']
 
 list_path_with_mask = [] # All the paths of the images with mask
@@ -18,6 +19,7 @@ images_with_mask = [Image.open(i) for i in list_path_with_mask] #All the images 
 images_without_mask = [Image.open(i) for i in list_path_without_mask] #All the images without mask
 
 def resize(list_images,string):
+    global nb_image
     new_images = []
     for i in range(len(list_images)):
         ig = list_images[i]
@@ -33,7 +35,8 @@ def resize(list_images,string):
             new_images.append(ig)
       
 
-        new_images[i].save("../img/resized/" + string + "/image" + str(i) +".png")
+        new_images[i].save("../img/resized/" + string + "/image" + str(nb_image) +".png")
+        nb_image = nb_image + 1
 
 
 
