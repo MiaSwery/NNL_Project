@@ -665,7 +665,7 @@ def start_app():
     	os.rmdir(f)
 
     list_path = glob.glob("../img/resized/with_mask/*png") + glob.glob("../img/resized/without_mask/*png")  # All the paths
-    list_path = list_path[0:7]
+    #list_path = list_path[0:7]
     images = [Image.open(i) for i in  list_path] #All the images
     images_resized = [ImageTk.PhotoImage(i) for i in images] 
 

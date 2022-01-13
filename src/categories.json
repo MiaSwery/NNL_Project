@@ -1,3 +1,7 @@
 {
-    "categories": []
+    "categories": [
+        "No Category",
+        "with_mask",
+        "without_mask"
+    ]
 }
