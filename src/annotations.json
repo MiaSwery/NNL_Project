@@ -7,27 +7,27 @@
                 "boxes": [
                     {
                         "point top left": [
-                            247,
-                            104
+                            203,
+                            74
                         ],
                         "point top right": [
-                            297,
-                            104
+                            300,
+                            74
                         ],
                         "point bottom left": [
-                            247,
-                            183
+                            203,
+                            184
                         ],
                         "point bottom right": [
-                            297,
-                            183
+                            300,
+                            184
                         ],
-                        "height": 79,
-                        "width": 50,
-                        "area": 3950,
+                        "height": 110,
+                        "width": 97,
+                        "area": 10670,
                         "category": "with_mask",
-                        "name": "image0-bb247x104-50-79",
-                        "path": "/img/annotated_images/image0-bb247x104-50-79.png"
+                        "name": "image0-bb203x74-97-110",
+                        "path": "/img/annotated_images/image0-bb203x74-97-110.png"
                     }
                 ]
             }
@@ -39,75 +39,27 @@
                 "boxes": [
                     {
                         "point top left": [
-                            99,
-                            138
+                            337,
+                            70
                         ],
                         "point top right": [
-                            140,
-                            138
+                            411,
+                            70
                         ],
                         "point bottom left": [
-                            99,
-                            196
+                            337,
+                            172
                         ],
                         "point bottom right": [
-                            140,
-                            196
+                            411,
+                            172
                         ],
-                        "height": 58,
-                        "width": 41,
-                        "area": 2378,
+                        "height": 102,
+                        "width": 74,
+                        "area": 7548,
                         "category": "with_mask",
-                        "name": "image1-bb99x138-41-58",
-                        "path": "/img/annotated_images/image1-bb99x138-41-58.png"
-                    },
-                    {
-                        "point top left": [
-                            238,
-                            42
-                        ],
-                        "point top right": [
-                            283,
-                            42
-                        ],
-                        "point bottom left": [
-                            238,
-                            97
-                        ],
-                        "point bottom right": [
-                            283,
-                            97
-                        ],
-                        "height": 55,
-                        "width": 45,
-                        "area": 2475,
-                        "category": "with_mask",
-                        "name": "image1-bb238x42-45-55",
-                        "path": "/img/annotated_images/image1-bb238x42-45-55.png"
-                    },
-                    {
-                        "point top left": [
-                            347,
-                            91
-                        ],
-                        "point top right": [
-                            391,
-                            91
-                        ],
-                        "point bottom left": [
-                            347,
-                            166
-                        ],
-                        "point bottom right": [
-                            391,
-                            166
-                        ],
-                        "height": 75,
-                        "width": 44,
-                        "area": 3300,
-                        "category": "with_mask",
-                        "name": "image1-bb347x91-44-75",
-                        "path": "/img/annotated_images/image1-bb347x91-44-75.png"
+                        "name": "image1-bb337x70-74-102",
+                        "path": "/img/annotated_images/image1-bb337x70-74-102.png"
                     }
                 ]
             }
@@ -116,7 +68,32 @@
             "image": {
                 "name": "image10",
                 "path": "../img/resized/with_mask\\image10.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            226,
+                            30
+                        ],
+                        "point top right": [
+                            279,
+                            30
+                        ],
+                        "point bottom left": [
+                            226,
+                            92
+                        ],
+                        "point bottom right": [
+                            279,
+                            92
+                        ],
+                        "height": 62,
+                        "width": 53,
+                        "area": 3286,
+                        "category": "with_mask",
+                        "name": "image10-bb226x30-53-62",
+                        "path": "/img/annotated_images/image10-bb226x30-53-62.png"
+                    }
+                ]
             }
         },
         {
@@ -126,75 +103,27 @@
                 "boxes": [
                     {
                         "point top left": [
-                            88,
-                            76
+                            231,
+                            53
                         ],
                         "point top right": [
-                            130,
-                            76
+                            286,
+                            53
                         ],
                         "point bottom left": [
-                            88,
-                            136
+                            231,
+                            135
                         ],
                         "point bottom right": [
-                            130,
-                            136
+                            286,
+                            135
                         ],
-                        "height": 60,
-                        "width": 42,
-                        "area": 2520,
+                        "height": 82,
+                        "width": 55,
+                        "area": 4510,
                         "category": "with_mask",
-                        "name": "image11-bb88x76-42-60",
-                        "path": "/img/annotated_images/image11-bb88x76-42-60.png"
-                    },
-                    {
-                        "point top left": [
-                            237,
-                            79
-                        ],
-                        "point top right": [
-                            275,
-                            79
-                        ],
-                        "point bottom left": [
-                            237,
-                            128
-                        ],
-                        "point bottom right": [
-                            275,
-                            128
-                        ],
-                        "height": 49,
-                        "width": 38,
-                        "area": 1862,
-                        "category": "with_mask",
-                        "name": "image11-bb237x79-38-49",
-                        "path": "/img/annotated_images/image11-bb237x79-38-49.png"
-                    },
-                    {
-                        "point top left": [
-                            391,
-                            94
-                        ],
-                        "point top right": [
-                            433,
-                            94
-                        ],
-                        "point bottom left": [
-                            391,
-                            132
-                        ],
-                        "point bottom right": [
-                            433,
-                            132
-                        ],
-                        "height": 38,
-                        "width": 42,
-                        "area": 1596,
-                        "category": "with_mask",
-                        "name": "image11-bb391x94-42-38",
-                        "path": "/img/annotated_images/image11-bb391x94-42-38.png"
+                        "name": "image11-bb231x53-55-82",
+                        "path": "/img/annotated_images/image11-bb231x53-55-82.png"
                     }
                 ]
             }
@@ -206,27 +135,27 @@
                 "boxes": [
                     {
                         "point top left": [
-                            236,
-                            54
+                            217,
+                            42
                         ],
                         "point top right": [
-                            272,
-                            54
+                            292,
+                            42
                         ],
                         "point bottom left": [
-                            236,
-                            129
+                            217,
+                            126
                         ],
                         "point bottom right": [
-                            272,
-                            129
+                            292,
+                            126
                         ],
-                        "height": 75,
-                        "width": 36,
-                        "area": 2700,
+                        "height": 84,
+                        "width": 75,
+                        "area": 6300,
                         "category": "with_mask",
-                        "name": "image12-bb236x54-36-75",
-                        "path": "/img/annotated_images/image12-bb236x54-36-75.png"
+                        "name": "image12-bb217x42-75-84",
+                        "path": "/img/annotated_images/image12-bb217x42-75-84.png"
                     }
                 ]
             }
@@ -235,329 +164,1504 @@
             "image": {
                 "name": "image13",
                 "path": "../img/resized/with_mask\\image13.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            211,
+                            34
+                        ],
+                        "point top right": [
+                            263,
+                            34
+                        ],
+                        "point bottom left": [
+                            211,
+                            104
+                        ],
+                        "point bottom right": [
+                            263,
+                            104
+                        ],
+                        "height": 70,
+                        "width": 52,
+                        "area": 3640,
+                        "category": "with_mask",
+                        "name": "image13-bb211x34-52-70",
+                        "path": "/img/annotated_images/image13-bb211x34-52-70.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image14",
                 "path": "../img/resized/with_mask\\image14.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            244,
+                            73
+                        ],
+                        "point top right": [
+                            309,
+                            73
+                        ],
+                        "point bottom left": [
+                            244,
+                            142
+                        ],
+                        "point bottom right": [
+                            309,
+                            142
+                        ],
+                        "height": 69,
+                        "width": 65,
+                        "area": 4485,
+                        "category": "with_mask",
+                        "name": "image14-bb244x73-65-69",
+                        "path": "/img/annotated_images/image14-bb244x73-65-69.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image15",
                 "path": "../img/resized/with_mask\\image15.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            116,
+                            2
+                        ],
+                        "point top right": [
+                            224,
+                            2
+                        ],
+                        "point bottom left": [
+                            116,
+                            134
+                        ],
+                        "point bottom right": [
+                            224,
+                            134
+                        ],
+                        "height": 132,
+                        "width": 108,
+                        "area": 14256,
+                        "category": "with_mask",
+                        "name": "image15-bb116x2-108-132",
+                        "path": "/img/annotated_images/image15-bb116x2-108-132.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image16",
                 "path": "../img/resized/with_mask\\image16.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            233,
+                            99
+                        ],
+                        "point top right": [
+                            297,
+                            99
+                        ],
+                        "point bottom left": [
+                            233,
+                            194
+                        ],
+                        "point bottom right": [
+                            297,
+                            194
+                        ],
+                        "height": 95,
+                        "width": 64,
+                        "area": 6080,
+                        "category": "with_mask",
+                        "name": "image16-bb233x99-64-95",
+                        "path": "/img/annotated_images/image16-bb233x99-64-95.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image17",
                 "path": "../img/resized/with_mask\\image17.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            286,
+                            51
+                        ],
+                        "point top right": [
+                            408,
+                            51
+                        ],
+                        "point bottom left": [
+                            286,
+                            182
+                        ],
+                        "point bottom right": [
+                            408,
+                            182
+                        ],
+                        "height": 131,
+                        "width": 122,
+                        "area": 15982,
+                        "category": "with_mask",
+                        "name": "image17-bb286x51-122-131",
+                        "path": "/img/annotated_images/image17-bb286x51-122-131.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image18",
                 "path": "../img/resized/with_mask\\image18.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            113,
+                            55
+                        ],
+                        "point top right": [
+                            191,
+                            55
+                        ],
+                        "point bottom left": [
+                            113,
+                            155
+                        ],
+                        "point bottom right": [
+                            191,
+                            155
+                        ],
+                        "height": 100,
+                        "width": 78,
+                        "area": 7800,
+                        "category": "with_mask",
+                        "name": "image18-bb113x55-78-100",
+                        "path": "/img/annotated_images/image18-bb113x55-78-100.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image19",
                 "path": "../img/resized/with_mask\\image19.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            225,
+                            140
+                        ],
+                        "point top right": [
+                            301,
+                            140
+                        ],
+                        "point bottom left": [
+                            225,
+                            232
+                        ],
+                        "point bottom right": [
+                            301,
+                            232
+                        ],
+                        "height": 92,
+                        "width": 76,
+                        "area": 6992,
+                        "category": "with_mask",
+                        "name": "image19-bb225x140-76-92",
+                        "path": "/img/annotated_images/image19-bb225x140-76-92.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image2",
                 "path": "../img/resized/with_mask\\image2.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            232,
+                            40
+                        ],
+                        "point top right": [
+                            314,
+                            40
+                        ],
+                        "point bottom left": [
+                            232,
+                            119
+                        ],
+                        "point bottom right": [
+                            314,
+                            119
+                        ],
+                        "height": 79,
+                        "width": 82,
+                        "area": 6478,
+                        "category": "with_mask",
+                        "name": "image2-bb232x40-82-79",
+                        "path": "/img/annotated_images/image2-bb232x40-82-79.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image20",
                 "path": "../img/resized/with_mask\\image20.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            89,
+                            14
+                        ],
+                        "point top right": [
+                            153,
+                            14
+                        ],
+                        "point bottom left": [
+                            89,
+                            84
+                        ],
+                        "point bottom right": [
+                            153,
+                            84
+                        ],
+                        "height": 70,
+                        "width": 64,
+                        "area": 4480,
+                        "category": "with_mask",
+                        "name": "image20-bb89x14-64-70",
+                        "path": "/img/annotated_images/image20-bb89x14-64-70.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image21",
                 "path": "../img/resized/with_mask\\image21.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            177,
+                            45
+                        ],
+                        "point top right": [
+                            215,
+                            45
+                        ],
+                        "point bottom left": [
+                            177,
+                            90
+                        ],
+                        "point bottom right": [
+                            215,
+                            90
+                        ],
+                        "height": 45,
+                        "width": 38,
+                        "area": 1710,
+                        "category": "with_mask",
+                        "name": "image21-bb177x45-38-45",
+                        "path": "/img/annotated_images/image21-bb177x45-38-45.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image22",
                 "path": "../img/resized/with_mask\\image22.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            310,
+                            33
+                        ],
+                        "point top right": [
+                            336,
+                            33
+                        ],
+                        "point bottom left": [
+                            310,
+                            68
+                        ],
+                        "point bottom right": [
+                            336,
+                            68
+                        ],
+                        "height": 35,
+                        "width": 26,
+                        "area": 910,
+                        "category": "with_mask",
+                        "name": "image22-bb310x33-26-35",
+                        "path": "/img/annotated_images/image22-bb310x33-26-35.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image23",
                 "path": "../img/resized/with_mask\\image23.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            151,
+                            67
+                        ],
+                        "point top right": [
+                            255,
+                            67
+                        ],
+                        "point bottom left": [
+                            151,
+                            200
+                        ],
+                        "point bottom right": [
+                            255,
+                            200
+                        ],
+                        "height": 133,
+                        "width": 104,
+                        "area": 13832,
+                        "category": "with_mask",
+                        "name": "image23-bb151x67-104-133",
+                        "path": "/img/annotated_images/image23-bb151x67-104-133.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image24",
                 "path": "../img/resized/with_mask\\image24.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            78,
+                            11
+                        ],
+                        "point top right": [
+                            349,
+                            11
+                        ],
+                        "point bottom left": [
+                            78,
+                            389
+                        ],
+                        "point bottom right": [
+                            349,
+                            389
+                        ],
+                        "height": 378,
+                        "width": 271,
+                        "area": 102438,
+                        "category": "with_mask",
+                        "name": "image24-bb78x11-271-378",
+                        "path": "/img/annotated_images/image24-bb78x11-271-378.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image25",
                 "path": "../img/resized/with_mask\\image25.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            163,
+                            11
+                        ],
+                        "point top right": [
+                            339,
+                            11
+                        ],
+                        "point bottom left": [
+                            163,
+                            219
+                        ],
+                        "point bottom right": [
+                            339,
+                            219
+                        ],
+                        "height": 208,
+                        "width": 176,
+                        "area": 36608,
+                        "category": "with_mask",
+                        "name": "image25-bb163x11-176-208",
+                        "path": "/img/annotated_images/image25-bb163x11-176-208.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image26",
                 "path": "../img/resized/with_mask\\image26.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            163,
+                            107
+                        ],
+                        "point top right": [
+                            293,
+                            107
+                        ],
+                        "point bottom left": [
+                            163,
+                            307
+                        ],
+                        "point bottom right": [
+                            293,
+                            307
+                        ],
+                        "height": 200,
+                        "width": 130,
+                        "area": 26000,
+                        "category": "with_mask",
+                        "name": "image26-bb163x107-130-200",
+                        "path": "/img/annotated_images/image26-bb163x107-130-200.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image27",
                 "path": "../img/resized/with_mask\\image27.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            185,
+                            143
+                        ],
+                        "point top right": [
+                            405,
+                            143
+                        ],
+                        "point bottom left": [
+                            185,
+                            427
+                        ],
+                        "point bottom right": [
+                            405,
+                            427
+                        ],
+                        "height": 284,
+                        "width": 220,
+                        "area": 62480,
+                        "category": "with_mask",
+                        "name": "image27-bb185x143-220-284",
+                        "path": "/img/annotated_images/image27-bb185x143-220-284.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image28",
                 "path": "../img/resized/with_mask\\image28.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            108,
+                            31
+                        ],
+                        "point top right": [
+                            303,
+                            31
+                        ],
+                        "point bottom left": [
+                            108,
+                            262
+                        ],
+                        "point bottom right": [
+                            303,
+                            262
+                        ],
+                        "height": 231,
+                        "width": 195,
+                        "area": 45045,
+                        "category": "with_mask",
+                        "name": "image28-bb108x31-195-231",
+                        "path": "/img/annotated_images/image28-bb108x31-195-231.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image29",
                 "path": "../img/resized/with_mask\\image29.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            205,
+                            32
+                        ],
+                        "point top right": [
+                            317,
+                            32
+                        ],
+                        "point bottom left": [
+                            205,
+                            201
+                        ],
+                        "point bottom right": [
+                            317,
+                            201
+                        ],
+                        "height": 169,
+                        "width": 112,
+                        "area": 18928,
+                        "category": "with_mask",
+                        "name": "image29-bb205x32-112-169",
+                        "path": "/img/annotated_images/image29-bb205x32-112-169.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image3",
                 "path": "../img/resized/with_mask\\image3.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            227,
+                            128
+                        ],
+                        "point top right": [
+                            254,
+                            128
+                        ],
+                        "point bottom left": [
+                            227,
+                            163
+                        ],
+                        "point bottom right": [
+                            254,
+                            163
+                        ],
+                        "height": 35,
+                        "width": 27,
+                        "area": 945,
+                        "category": "with_mask",
+                        "name": "image3-bb227x128-27-35",
+                        "path": "/img/annotated_images/image3-bb227x128-27-35.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image30",
                 "path": "../img/resized/with_mask\\image30.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            158,
+                            76
+                        ],
+                        "point top right": [
+                            365,
+                            76
+                        ],
+                        "point bottom left": [
+                            158,
+                            344
+                        ],
+                        "point bottom right": [
+                            365,
+                            344
+                        ],
+                        "height": 268,
+                        "width": 207,
+                        "area": 55476,
+                        "category": "with_mask",
+                        "name": "image30-bb158x76-207-268",
+                        "path": "/img/annotated_images/image30-bb158x76-207-268.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image31",
                 "path": "../img/resized/with_mask\\image31.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            121,
+                            31
+                        ],
+                        "point top right": [
+                            279,
+                            31
+                        ],
+                        "point bottom left": [
+                            121,
+                            259
+                        ],
+                        "point bottom right": [
+                            279,
+                            259
+                        ],
+                        "height": 228,
+                        "width": 158,
+                        "area": 36024,
+                        "category": "with_mask",
+                        "name": "image31-bb121x31-158-228",
+                        "path": "/img/annotated_images/image31-bb121x31-158-228.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image32",
                 "path": "../img/resized/with_mask\\image32.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            55,
+                            50
+                        ],
+                        "point top right": [
+                            245,
+                            50
+                        ],
+                        "point bottom left": [
+                            55,
+                            305
+                        ],
+                        "point bottom right": [
+                            245,
+                            305
+                        ],
+                        "height": 255,
+                        "width": 190,
+                        "area": 48450,
+                        "category": "with_mask",
+                        "name": "image32-bb55x50-190-255",
+                        "path": "/img/annotated_images/image32-bb55x50-190-255.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image33",
                 "path": "../img/resized/with_mask\\image33.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            182,
+                            99
+                        ],
+                        "point top right": [
+                            325,
+                            99
+                        ],
+                        "point bottom left": [
+                            182,
+                            266
+                        ],
+                        "point bottom right": [
+                            325,
+                            266
+                        ],
+                        "height": 167,
+                        "width": 143,
+                        "area": 23881,
+                        "category": "with_mask",
+                        "name": "image33-bb182x99-143-167",
+                        "path": "/img/annotated_images/image33-bb182x99-143-167.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image34",
                 "path": "../img/resized/with_mask\\image34.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            233,
+                            25
+                        ],
+                        "point top right": [
+                            327,
+                            25
+                        ],
+                        "point bottom left": [
+                            233,
+                            142
+                        ],
+                        "point bottom right": [
+                            327,
+                            142
+                        ],
+                        "height": 117,
+                        "width": 94,
+                        "area": 10998,
+                        "category": "with_mask",
+                        "name": "image34-bb233x25-94-117",
+                        "path": "/img/annotated_images/image34-bb233x25-94-117.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image35",
                 "path": "../img/resized/with_mask\\image35.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            127,
+                            60
+                        ],
+                        "point top right": [
+                            211,
+                            60
+                        ],
+                        "point bottom left": [
+                            127,
+                            172
+                        ],
+                        "point bottom right": [
+                            211,
+                            172
+                        ],
+                        "height": 112,
+                        "width": 84,
+                        "area": 9408,
+                        "category": "with_mask",
+                        "name": "image35-bb127x60-84-112",
+                        "path": "/img/annotated_images/image35-bb127x60-84-112.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image36",
                 "path": "../img/resized/with_mask\\image36.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            116,
+                            1
+                        ],
+                        "point top right": [
+                            329,
+                            1
+                        ],
+                        "point bottom left": [
+                            116,
+                            274
+                        ],
+                        "point bottom right": [
+                            329,
+                            274
+                        ],
+                        "height": 273,
+                        "width": 213,
+                        "area": 58149,
+                        "category": "with_mask",
+                        "name": "image36-bb116x1-213-273",
+                        "path": "/img/annotated_images/image36-bb116x1-213-273.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image37",
                 "path": "../img/resized/with_mask\\image37.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            199,
+                            63
+                        ],
+                        "point top right": [
+                            335,
+                            63
+                        ],
+                        "point bottom left": [
+                            199,
+                            238
+                        ],
+                        "point bottom right": [
+                            335,
+                            238
+                        ],
+                        "height": 175,
+                        "width": 136,
+                        "area": 23800,
+                        "category": "with_mask",
+                        "name": "image37-bb199x63-136-175",
+                        "path": "/img/annotated_images/image37-bb199x63-136-175.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image38",
                 "path": "../img/resized/with_mask\\image38.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            128,
+                            6
+                        ],
+                        "point top right": [
+                            400,
+                            6
+                        ],
+                        "point bottom left": [
+                            128,
+                            355
+                        ],
+                        "point bottom right": [
+                            400,
+                            355
+                        ],
+                        "height": 349,
+                        "width": 272,
+                        "area": 94928,
+                        "category": "with_mask",
+                        "name": "image38-bb128x6-272-349",
+                        "path": "/img/annotated_images/image38-bb128x6-272-349.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image39",
                 "path": "../img/resized/with_mask\\image39.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            197,
+                            27
+                        ],
+                        "point top right": [
+                            343,
+                            27
+                        ],
+                        "point bottom left": [
+                            197,
+                            214
+                        ],
+                        "point bottom right": [
+                            343,
+                            214
+                        ],
+                        "height": 187,
+                        "width": 146,
+                        "area": 27302,
+                        "category": "with_mask",
+                        "name": "image39-bb197x27-146-187",
+                        "path": "/img/annotated_images/image39-bb197x27-146-187.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image4",
                 "path": "../img/resized/with_mask\\image4.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            200,
+                            10
+                        ],
+                        "point top right": [
+                            239,
+                            10
+                        ],
+                        "point bottom left": [
+                            200,
+                            67
+                        ],
+                        "point bottom right": [
+                            239,
+                            67
+                        ],
+                        "height": 57,
+                        "width": 39,
+                        "area": 2223,
+                        "category": "with_mask",
+                        "name": "image4-bb200x10-39-57",
+                        "path": "/img/annotated_images/image4-bb200x10-39-57.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image40",
                 "path": "../img/resized/with_mask\\image40.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            132,
+                            49
+                        ],
+                        "point top right": [
+                            248,
+                            49
+                        ],
+                        "point bottom left": [
+                            132,
+                            237
+                        ],
+                        "point bottom right": [
+                            248,
+                            237
+                        ],
+                        "height": 188,
+                        "width": 116,
+                        "area": 21808,
+                        "category": "with_mask",
+                        "name": "image40-bb132x49-116-188",
+                        "path": "/img/annotated_images/image40-bb132x49-116-188.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image41",
                 "path": "../img/resized/with_mask\\image41.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            123,
+                            30
+                        ],
+                        "point top right": [
+                            335,
+                            30
+                        ],
+                        "point bottom left": [
+                            123,
+                            283
+                        ],
+                        "point bottom right": [
+                            335,
+                            283
+                        ],
+                        "height": 253,
+                        "width": 212,
+                        "area": 53636,
+                        "category": "with_mask",
+                        "name": "image41-bb123x30-212-253",
+                        "path": "/img/annotated_images/image41-bb123x30-212-253.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image42",
                 "path": "../img/resized/with_mask\\image42.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            145,
+                            37
+                        ],
+                        "point top right": [
+                            362,
+                            37
+                        ],
+                        "point bottom left": [
+                            145,
+                            301
+                        ],
+                        "point bottom right": [
+                            362,
+                            301
+                        ],
+                        "height": 264,
+                        "width": 217,
+                        "area": 57288,
+                        "category": "with_mask",
+                        "name": "image42-bb145x37-217-264",
+                        "path": "/img/annotated_images/image42-bb145x37-217-264.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image43",
                 "path": "../img/resized/with_mask\\image43.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            148,
+                            47
+                        ],
+                        "point top right": [
+                            425,
+                            47
+                        ],
+                        "point bottom left": [
+                            148,
+                            443
+                        ],
+                        "point bottom right": [
+                            425,
+                            443
+                        ],
+                        "height": 396,
+                        "width": 277,
+                        "area": 109692,
+                        "category": "with_mask",
+                        "name": "image43-bb148x47-277-396",
+                        "path": "/img/annotated_images/image43-bb148x47-277-396.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image44",
                 "path": "../img/resized/with_mask\\image44.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            191,
+                            81
+                        ],
+                        "point top right": [
+                            313,
+                            81
+                        ],
+                        "point bottom left": [
+                            191,
+                            219
+                        ],
+                        "point bottom right": [
+                            313,
+                            219
+                        ],
+                        "height": 138,
+                        "width": 122,
+                        "area": 16836,
+                        "category": "with_mask",
+                        "name": "image44-bb191x81-122-138",
+                        "path": "/img/annotated_images/image44-bb191x81-122-138.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image45",
                 "path": "../img/resized/with_mask\\image45.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            240,
+                            65
+                        ],
+                        "point top right": [
+                            336,
+                            65
+                        ],
+                        "point bottom left": [
+                            240,
+                            199
+                        ],
+                        "point bottom right": [
+                            336,
+                            199
+                        ],
+                        "height": 134,
+                        "width": 96,
+                        "area": 12864,
+                        "category": "with_mask",
+                        "name": "image45-bb240x65-96-134",
+                        "path": "/img/annotated_images/image45-bb240x65-96-134.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image46",
                 "path": "../img/resized/with_mask\\image46.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            116,
+                            10
+                        ],
+                        "point top right": [
+                            375,
+                            10
+                        ],
+                        "point bottom left": [
+                            116,
+                            353
+                        ],
+                        "point bottom right": [
+                            375,
+                            353
+                        ],
+                        "height": 343,
+                        "width": 259,
+                        "area": 88837,
+                        "category": "with_mask",
+                        "name": "image46-bb116x10-259-343",
+                        "path": "/img/annotated_images/image46-bb116x10-259-343.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image47",
                 "path": "../img/resized/with_mask\\image47.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            4,
+                            3
+                        ],
+                        "point top right": [
+                            196,
+                            3
+                        ],
+                        "point bottom left": [
+                            4,
+                            247
+                        ],
+                        "point bottom right": [
+                            196,
+                            247
+                        ],
+                        "height": 244,
+                        "width": 192,
+                        "area": 46848,
+                        "category": "with_mask",
+                        "name": "image47-bb4x3-192-244",
+                        "path": "/img/annotated_images/image47-bb4x3-192-244.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image48",
                 "path": "../img/resized/with_mask\\image48.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            132,
+                            40
+                        ],
+                        "point top right": [
+                            306,
+                            40
+                        ],
+                        "point bottom left": [
+                            132,
+                            270
+                        ],
+                        "point bottom right": [
+                            306,
+                            270
+                        ],
+                        "height": 230,
+                        "width": 174,
+                        "area": 40020,
+                        "category": "with_mask",
+                        "name": "image48-bb132x40-174-230",
+                        "path": "/img/annotated_images/image48-bb132x40-174-230.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image49",
                 "path": "../img/resized/with_mask\\image49.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            201,
+                            47
+                        ],
+                        "point top right": [
+                            305,
+                            47
+                        ],
+                        "point bottom left": [
+                            201,
+                            192
+                        ],
+                        "point bottom right": [
+                            305,
+                            192
+                        ],
+                        "height": 145,
+                        "width": 104,
+                        "area": 15080,
+                        "category": "with_mask",
+                        "name": "image49-bb201x47-104-145",
+                        "path": "/img/annotated_images/image49-bb201x47-104-145.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image5",
                 "path": "../img/resized/with_mask\\image5.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            215,
+                            86
+                        ],
+                        "point top right": [
+                            323,
+                            86
+                        ],
+                        "point bottom left": [
+                            215,
+                            224
+                        ],
+                        "point bottom right": [
+                            323,
+                            224
+                        ],
+                        "height": 138,
+                        "width": 108,
+                        "area": 14904,
+                        "category": "with_mask",
+                        "name": "image5-bb215x86-108-138",
+                        "path": "/img/annotated_images/image5-bb215x86-108-138.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image6",
                 "path": "../img/resized/with_mask\\image6.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            183,
+                            10
+                        ],
+                        "point top right": [
+                            211,
+                            10
+                        ],
+                        "point bottom left": [
+                            183,
+                            43
+                        ],
+                        "point bottom right": [
+                            211,
+                            43
+                        ],
+                        "height": 33,
+                        "width": 28,
+                        "area": 924,
+                        "category": "with_mask",
+                        "name": "image6-bb183x10-28-33",
+                        "path": "/img/annotated_images/image6-bb183x10-28-33.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image7",
                 "path": "../img/resized/with_mask\\image7.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            281,
+                            105
+                        ],
+                        "point top right": [
+                            358,
+                            105
+                        ],
+                        "point bottom left": [
+                            281,
+                            195
+                        ],
+                        "point bottom right": [
+                            358,
+                            195
+                        ],
+                        "height": 90,
+                        "width": 77,
+                        "area": 6930,
+                        "category": "with_mask",
+                        "name": "image7-bb281x105-77-90",
+                        "path": "/img/annotated_images/image7-bb281x105-77-90.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image8",
                 "path": "../img/resized/with_mask\\image8.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            223,
+                            32
+                        ],
+                        "point top right": [
+                            283,
+                            32
+                        ],
+                        "point bottom left": [
+                            223,
+                            108
+                        ],
+                        "point bottom right": [
+                            283,
+                            108
+                        ],
+                        "height": 76,
+                        "width": 60,
+                        "area": 4560,
+                        "category": "with_mask",
+                        "name": "image8-bb223x32-60-76",
+                        "path": "/img/annotated_images/image8-bb223x32-60-76.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image9",
                 "path": "../img/resized/with_mask\\image9.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            217,
+                            23
+                        ],
+                        "point top right": [
+                            266,
+                            23
+                        ],
+                        "point bottom left": [
+                            217,
+                            86
+                        ],
+                        "point bottom right": [
+                            266,
+                            86
+                        ],
+                        "height": 63,
+                        "width": 49,
+                        "area": 3087,
+                        "category": "with_mask",
+                        "name": "image9-bb217x23-49-63",
+                        "path": "/img/annotated_images/image9-bb217x23-49-63.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image50",
                 "path": "../img/resized/without_mask\\image50.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            132,
+                            6
+                        ],
+                        "point top right": [
+                            186,
+                            6
+                        ],
+                        "point bottom left": [
+                            132,
+                            59
+                        ],
+                        "point bottom right": [
+                            186,
+                            59
+                        ],
+                        "height": 53,
+                        "width": 54,
+                        "area": 2862,
+                        "category": "without_mask",
+                        "name": "image50-bb132x6-54-53",
+                        "path": "/img/annotated_images/image50-bb132x6-54-53.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image51",
                 "path": "../img/resized/without_mask\\image51.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            264,
+                            88
+                        ],
+                        "point top right": [
+                            287,
+                            88
+                        ],
+                        "point bottom left": [
+                            264,
+                            128
+                        ],
+                        "point bottom right": [
+                            287,
+                            128
+                        ],
+                        "height": 40,
+                        "width": 23,
+                        "area": 920,
+                        "category": "without_mask",
+                        "name": "image51-bb264x88-23-40",
+                        "path": "/img/annotated_images/image51-bb264x88-23-40.png"
+                    }
+                ]
             }
         },
         {
@@ -567,27 +1671,27 @@
                 "boxes": [
                     {
                         "point top left": [
-                            307,
-                            10
+                            301,
+                            1
                         ],
                         "point top right": [
-                            326,
-                            10
+                            330,
+                            1
                         ],
                         "point bottom left": [
-                            307,
-                            36
+                            301,
+                            39
                         ],
                         "point bottom right": [
-                            326,
-                            36
+                            330,
+                            39
                         ],
-                        "height": 26,
-                        "width": 19,
-                        "area": 494,
+                        "height": 38,
+                        "width": 29,
+                        "area": 1102,
                         "category": "without_mask",
-                        "name": "image52-bb307x10-19-26",
-                        "path": "/img/annotated_images/image52-bb307x10-19-26.png"
+                        "name": "image52-bb301x1-29-38",
+                        "path": "/img/annotated_images/image52-bb301x1-29-38.png"
                     }
                 ]
             }
@@ -599,27 +1703,27 @@
                 "boxes": [
                     {
                         "point top left": [
-                            149,
-                            71
+                            141,
+                            61
                         ],
                         "point top right": [
-                            185,
-                            71
+                            183,
+                            61
                         ],
                         "point bottom left": [
-                            149,
-                            108
+                            141,
+                            111
                         ],
                         "point bottom right": [
-                            185,
-                            108
+                            183,
+                            111
                         ],
-                        "height": 37,
-                        "width": 36,
-                        "area": 1332,
+                        "height": 50,
+                        "width": 42,
+                        "area": 2100,
                         "category": "without_mask",
-                        "name": "image53-bb149x71-36-37",
-                        "path": "/img/annotated_images/image53-bb149x71-36-37.png"
+                        "name": "image53-bb141x61-42-50",
+                        "path": "/img/annotated_images/image53-bb141x61-42-50.png"
                     }
                 ]
             }
@@ -628,14 +1732,64 @@
             "image": {
                 "name": "image54",
                 "path": "../img/resized/without_mask\\image54.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            242,
+                            144
+                        ],
+                        "point top right": [
+                            271,
+                            144
+                        ],
+                        "point bottom left": [
+                            242,
+                            184
+                        ],
+                        "point bottom right": [
+                            271,
+                            184
+                        ],
+                        "height": 40,
+                        "width": 29,
+                        "area": 1160,
+                        "category": "without_mask",
+                        "name": "image54-bb242x144-29-40",
+                        "path": "/img/annotated_images/image54-bb242x144-29-40.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image55",
                 "path": "../img/resized/without_mask\\image55.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            261,
+                            86
+                        ],
+                        "point top right": [
+                            286,
+                            86
+                        ],
+                        "point bottom left": [
+                            261,
+                            120
+                        ],
+                        "point bottom right": [
+                            286,
+                            120
+                        ],
+                        "height": 34,
+                        "width": 25,
+                        "area": 850,
+                        "category": "without_mask",
+                        "name": "image55-bb261x86-25-34",
+                        "path": "/img/annotated_images/image55-bb261x86-25-34.png"
+                    }
+                ]
             }
         },
         {
@@ -645,51 +1799,27 @@
                 "boxes": [
                     {
                         "point top left": [
-                            109,
-                            29
+                            92,
+                            18
                         ],
                         "point top right": [
                             144,
-                            29
+                            18
                         ],
                         "point bottom left": [
-                            109,
-                            82
+                            92,
+                            89
                         ],
                         "point bottom right": [
                             144,
-                            82
+                            89
                         ],
-                        "height": 53,
-                        "width": 35,
-                        "area": 1855,
+                        "height": 71,
+                        "width": 52,
+                        "area": 3692,
                         "category": "without_mask",
-                        "name": "image56-bb109x29-35-53",
-                        "path": "/img/annotated_images/image56-bb109x29-35-53.png"
-                    },
-                    {
-                        "point top left": [
-                            354,
-                            24
-                        ],
-                        "point top right": [
-                            391,
-                            24
-                        ],
-                        "point bottom left": [
-                            354,
-                            72
-                        ],
-                        "point bottom right": [
-                            391,
-                            72
-                        ],
-                        "height": 48,
-                        "width": 37,
-                        "area": 1776,
-                        "category": "without_mask",
-                        "name": "image56-bb354x24-37-48",
-                        "path": "/img/annotated_images/image56-bb354x24-37-48.png"
+                        "name": "image56-bb92x18-52-71",
+                        "path": "/img/annotated_images/image56-bb92x18-52-71.png"
                     }
                 ]
             }
@@ -698,21 +1828,96 @@
             "image": {
                 "name": "image57",
                 "path": "../img/resized/without_mask\\image57.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            305,
+                            119
+                        ],
+                        "point top right": [
+                            341,
+                            119
+                        ],
+                        "point bottom left": [
+                            305,
+                            158
+                        ],
+                        "point bottom right": [
+                            341,
+                            158
+                        ],
+                        "height": 39,
+                        "width": 36,
+                        "area": 1404,
+                        "category": "without_mask",
+                        "name": "image57-bb305x119-36-39",
+                        "path": "/img/annotated_images/image57-bb305x119-36-39.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image58",
                 "path": "../img/resized/without_mask\\image58.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            196,
+                            54
+                        ],
+                        "point top right": [
+                            243,
+                            54
+                        ],
+                        "point bottom left": [
+                            196,
+                            114
+                        ],
+                        "point bottom right": [
+                            243,
+                            114
+                        ],
+                        "height": 60,
+                        "width": 47,
+                        "area": 2820,
+                        "category": "without_mask",
+                        "name": "image58-bb196x54-47-60",
+                        "path": "/img/annotated_images/image58-bb196x54-47-60.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image59",
                 "path": "../img/resized/without_mask\\image59.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            143,
+                            38
+                        ],
+                        "point top right": [
+                            185,
+                            38
+                        ],
+                        "point bottom left": [
+                            143,
+                            87
+                        ],
+                        "point bottom right": [
+                            185,
+                            87
+                        ],
+                        "height": 49,
+                        "width": 42,
+                        "area": 2058,
+                        "category": "without_mask",
+                        "name": "image59-bb143x38-42-49",
+                        "path": "/img/annotated_images/image59-bb143x38-42-49.png"
+                    }
+                ]
             }
         },
         {
@@ -722,51 +1927,27 @@
                 "boxes": [
                     {
                         "point top left": [
-                            95,
-                            28
+                            291,
+                            38
                         ],
                         "point top right": [
-                            129,
-                            28
+                            353,
+                            38
                         ],
                         "point bottom left": [
-                            95,
-                            88
+                            291,
+                            98
                         ],
                         "point bottom right": [
-                            129,
-                            88
+                            353,
+                            98
                         ],
                         "height": 60,
-                        "width": 34,
-                        "area": 2040,
+                        "width": 62,
+                        "area": 3720,
                         "category": "without_mask",
-                        "name": "image60-bb95x28-34-60",
-                        "path": "/img/annotated_images/image60-bb95x28-34-60.png"
-                    },
-                    {
-                        "point top left": [
-                            286,
-                            48
-                        ],
-                        "point top right": [
-                            333,
-                            48
-                        ],
-                        "point bottom left": [
-                            286,
-                            96
-                        ],
-                        "point bottom right": [
-                            333,
-                            96
-                        ],
-                        "height": 48,
-                        "width": 47,
-                        "area": 2256,
-                        "category": "without_mask",
-                        "name": "image60-bb286x48-47-48",
-                        "path": "/img/annotated_images/image60-bb286x48-47-48.png"
+                        "name": "image60-bb291x38-62-60",
+                        "path": "/img/annotated_images/image60-bb291x38-62-60.png"
                     }
                 ]
             }
@@ -775,224 +1956,1024 @@
             "image": {
                 "name": "image61",
                 "path": "../img/resized/without_mask\\image61.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            203,
+                            70
+                        ],
+                        "point top right": [
+                            255,
+                            70
+                        ],
+                        "point bottom left": [
+                            203,
+                            137
+                        ],
+                        "point bottom right": [
+                            255,
+                            137
+                        ],
+                        "height": 67,
+                        "width": 52,
+                        "area": 3484,
+                        "category": "without_mask",
+                        "name": "image61-bb203x70-52-67",
+                        "path": "/img/annotated_images/image61-bb203x70-52-67.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image62",
                 "path": "../img/resized/without_mask\\image62.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            289,
+                            45
+                        ],
+                        "point top right": [
+                            345,
+                            45
+                        ],
+                        "point bottom left": [
+                            289,
+                            104
+                        ],
+                        "point bottom right": [
+                            345,
+                            104
+                        ],
+                        "height": 59,
+                        "width": 56,
+                        "area": 3304,
+                        "category": "without_mask",
+                        "name": "image62-bb289x45-56-59",
+                        "path": "/img/annotated_images/image62-bb289x45-56-59.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image63",
                 "path": "../img/resized/without_mask\\image63.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            18,
+                            111
+                        ],
+                        "point top right": [
+                            77,
+                            111
+                        ],
+                        "point bottom left": [
+                            18,
+                            193
+                        ],
+                        "point bottom right": [
+                            77,
+                            193
+                        ],
+                        "height": 82,
+                        "width": 59,
+                        "area": 4838,
+                        "category": "without_mask",
+                        "name": "image63-bb18x111-59-82",
+                        "path": "/img/annotated_images/image63-bb18x111-59-82.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image64",
                 "path": "../img/resized/without_mask\\image64.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            191,
+                            56
+                        ],
+                        "point top right": [
+                            238,
+                            56
+                        ],
+                        "point bottom left": [
+                            191,
+                            118
+                        ],
+                        "point bottom right": [
+                            238,
+                            118
+                        ],
+                        "height": 62,
+                        "width": 47,
+                        "area": 2914,
+                        "category": "without_mask",
+                        "name": "image64-bb191x56-47-62",
+                        "path": "/img/annotated_images/image64-bb191x56-47-62.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image65",
                 "path": "../img/resized/without_mask\\image65.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            209,
+                            38
+                        ],
+                        "point top right": [
+                            249,
+                            38
+                        ],
+                        "point bottom left": [
+                            209,
+                            82
+                        ],
+                        "point bottom right": [
+                            249,
+                            82
+                        ],
+                        "height": 44,
+                        "width": 40,
+                        "area": 1760,
+                        "category": "without_mask",
+                        "name": "image65-bb209x38-40-44",
+                        "path": "/img/annotated_images/image65-bb209x38-40-44.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image66",
                 "path": "../img/resized/without_mask\\image66.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            199,
+                            62
+                        ],
+                        "point top right": [
+                            273,
+                            62
+                        ],
+                        "point bottom left": [
+                            199,
+                            154
+                        ],
+                        "point bottom right": [
+                            273,
+                            154
+                        ],
+                        "height": 92,
+                        "width": 74,
+                        "area": 6808,
+                        "category": "without_mask",
+                        "name": "image66-bb199x62-74-92",
+                        "path": "/img/annotated_images/image66-bb199x62-74-92.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image67",
                 "path": "../img/resized/without_mask\\image67.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            398,
+                            9
+                        ],
+                        "point top right": [
+                            434,
+                            9
+                        ],
+                        "point bottom left": [
+                            398,
+                            47
+                        ],
+                        "point bottom right": [
+                            434,
+                            47
+                        ],
+                        "height": 38,
+                        "width": 36,
+                        "area": 1368,
+                        "category": "without_mask",
+                        "name": "image67-bb398x9-36-38",
+                        "path": "/img/annotated_images/image67-bb398x9-36-38.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image68",
                 "path": "../img/resized/without_mask\\image68.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            131,
+                            32
+                        ],
+                        "point top right": [
+                            184,
+                            32
+                        ],
+                        "point bottom left": [
+                            131,
+                            97
+                        ],
+                        "point bottom right": [
+                            184,
+                            97
+                        ],
+                        "height": 65,
+                        "width": 53,
+                        "area": 3445,
+                        "category": "without_mask",
+                        "name": "image68-bb131x32-53-65",
+                        "path": "/img/annotated_images/image68-bb131x32-53-65.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image69",
                 "path": "../img/resized/without_mask\\image69.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            239,
+                            15
+                        ],
+                        "point top right": [
+                            282,
+                            15
+                        ],
+                        "point bottom left": [
+                            239,
+                            69
+                        ],
+                        "point bottom right": [
+                            282,
+                            69
+                        ],
+                        "height": 54,
+                        "width": 43,
+                        "area": 2322,
+                        "category": "without_mask",
+                        "name": "image69-bb239x15-43-54",
+                        "path": "/img/annotated_images/image69-bb239x15-43-54.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image70",
                 "path": "../img/resized/without_mask\\image70.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            227,
+                            1
+                        ],
+                        "point top right": [
+                            287,
+                            1
+                        ],
+                        "point bottom left": [
+                            227,
+                            47
+                        ],
+                        "point bottom right": [
+                            287,
+                            47
+                        ],
+                        "height": 46,
+                        "width": 60,
+                        "area": 2760,
+                        "category": "without_mask",
+                        "name": "image70-bb227x1-60-46",
+                        "path": "/img/annotated_images/image70-bb227x1-60-46.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image71",
                 "path": "../img/resized/without_mask\\image71.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            39,
+                            5
+                        ],
+                        "point top right": [
+                            111,
+                            5
+                        ],
+                        "point bottom left": [
+                            39,
+                            89
+                        ],
+                        "point bottom right": [
+                            111,
+                            89
+                        ],
+                        "height": 84,
+                        "width": 72,
+                        "area": 6048,
+                        "category": "without_mask",
+                        "name": "image71-bb39x5-72-84",
+                        "path": "/img/annotated_images/image71-bb39x5-72-84.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image72",
                 "path": "../img/resized/without_mask\\image72.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            160,
+                            8
+                        ],
+                        "point top right": [
+                            403,
+                            8
+                        ],
+                        "point bottom left": [
+                            160,
+                            305
+                        ],
+                        "point bottom right": [
+                            403,
+                            305
+                        ],
+                        "height": 297,
+                        "width": 243,
+                        "area": 72171,
+                        "category": "without_mask",
+                        "name": "image72-bb160x8-243-297",
+                        "path": "/img/annotated_images/image72-bb160x8-243-297.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image73",
                 "path": "../img/resized/without_mask\\image73.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            94,
+                            4
+                        ],
+                        "point top right": [
+                            190,
+                            4
+                        ],
+                        "point bottom left": [
+                            94,
+                            141
+                        ],
+                        "point bottom right": [
+                            190,
+                            141
+                        ],
+                        "height": 137,
+                        "width": 96,
+                        "area": 13152,
+                        "category": "without_mask",
+                        "name": "image73-bb94x4-96-137",
+                        "path": "/img/annotated_images/image73-bb94x4-96-137.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image74",
                 "path": "../img/resized/without_mask\\image74.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            73,
+                            1
+                        ],
+                        "point top right": [
+                            187,
+                            1
+                        ],
+                        "point bottom left": [
+                            73,
+                            142
+                        ],
+                        "point bottom right": [
+                            187,
+                            142
+                        ],
+                        "height": 141,
+                        "width": 114,
+                        "area": 16074,
+                        "category": "without_mask",
+                        "name": "image74-bb73x1-114-141",
+                        "path": "/img/annotated_images/image74-bb73x1-114-141.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image75",
                 "path": "../img/resized/without_mask\\image75.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            75,
+                            1
+                        ],
+                        "point top right": [
+                            227,
+                            1
+                        ],
+                        "point bottom left": [
+                            75,
+                            180
+                        ],
+                        "point bottom right": [
+                            227,
+                            180
+                        ],
+                        "height": 179,
+                        "width": 152,
+                        "area": 27208,
+                        "category": "without_mask",
+                        "name": "image75-bb75x1-152-179",
+                        "path": "/img/annotated_images/image75-bb75x1-152-179.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image76",
                 "path": "../img/resized/without_mask\\image76.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            144,
+                            3
+                        ],
+                        "point top right": [
+                            247,
+                            3
+                        ],
+                        "point bottom left": [
+                            144,
+                            133
+                        ],
+                        "point bottom right": [
+                            247,
+                            133
+                        ],
+                        "height": 130,
+                        "width": 103,
+                        "area": 13390,
+                        "category": "without_mask",
+                        "name": "image76-bb144x3-103-130",
+                        "path": "/img/annotated_images/image76-bb144x3-103-130.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image77",
                 "path": "../img/resized/without_mask\\image77.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            61,
+                            30
+                        ],
+                        "point top right": [
+                            162,
+                            30
+                        ],
+                        "point bottom left": [
+                            61,
+                            175
+                        ],
+                        "point bottom right": [
+                            162,
+                            175
+                        ],
+                        "height": 145,
+                        "width": 101,
+                        "area": 14645,
+                        "category": "without_mask",
+                        "name": "image77-bb61x30-101-145",
+                        "path": "/img/annotated_images/image77-bb61x30-101-145.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image78",
                 "path": "../img/resized/without_mask\\image78.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            147,
+                            27
+                        ],
+                        "point top right": [
+                            219,
+                            27
+                        ],
+                        "point bottom left": [
+                            147,
+                            137
+                        ],
+                        "point bottom right": [
+                            219,
+                            137
+                        ],
+                        "height": 110,
+                        "width": 72,
+                        "area": 7920,
+                        "category": "without_mask",
+                        "name": "image78-bb147x27-72-110",
+                        "path": "/img/annotated_images/image78-bb147x27-72-110.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image79",
                 "path": "../img/resized/without_mask\\image79.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            101,
+                            2
+                        ],
+                        "point top right": [
+                            218,
+                            2
+                        ],
+                        "point bottom left": [
+                            101,
+                            119
+                        ],
+                        "point bottom right": [
+                            218,
+                            119
+                        ],
+                        "height": 117,
+                        "width": 117,
+                        "area": 13689,
+                        "category": "without_mask",
+                        "name": "image79-bb101x2-117-117",
+                        "path": "/img/annotated_images/image79-bb101x2-117-117.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image80",
                 "path": "../img/resized/without_mask\\image80.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            44,
+                            13
+                        ],
+                        "point top right": [
+                            175,
+                            13
+                        ],
+                        "point bottom left": [
+                            44,
+                            156
+                        ],
+                        "point bottom right": [
+                            175,
+                            156
+                        ],
+                        "height": 143,
+                        "width": 131,
+                        "area": 18733,
+                        "category": "without_mask",
+                        "name": "image80-bb44x13-131-143",
+                        "path": "/img/annotated_images/image80-bb44x13-131-143.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image81",
                 "path": "../img/resized/without_mask\\image81.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            114,
+                            0
+                        ],
+                        "point top right": [
+                            205,
+                            0
+                        ],
+                        "point bottom left": [
+                            114,
+                            131
+                        ],
+                        "point bottom right": [
+                            205,
+                            131
+                        ],
+                        "height": 131,
+                        "width": 91,
+                        "area": 11921,
+                        "category": "without_mask",
+                        "name": "image81-bb114x0-91-131",
+                        "path": "/img/annotated_images/image81-bb114x0-91-131.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image82",
                 "path": "../img/resized/without_mask\\image82.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            35,
+                            4
+                        ],
+                        "point top right": [
+                            194,
+                            4
+                        ],
+                        "point bottom left": [
+                            35,
+                            209
+                        ],
+                        "point bottom right": [
+                            194,
+                            209
+                        ],
+                        "height": 205,
+                        "width": 159,
+                        "area": 32595,
+                        "category": "without_mask",
+                        "name": "image82-bb35x4-159-205",
+                        "path": "/img/annotated_images/image82-bb35x4-159-205.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image83",
                 "path": "../img/resized/without_mask\\image83.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            174,
+                            31
+                        ],
+                        "point top right": [
+                            417,
+                            31
+                        ],
+                        "point bottom left": [
+                            174,
+                            369
+                        ],
+                        "point bottom right": [
+                            417,
+                            369
+                        ],
+                        "height": 338,
+                        "width": 243,
+                        "area": 82134,
+                        "category": "without_mask",
+                        "name": "image83-bb174x31-243-338",
+                        "path": "/img/annotated_images/image83-bb174x31-243-338.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image84",
                 "path": "../img/resized/without_mask\\image84.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            78,
+                            77
+                        ],
+                        "point top right": [
+                            233,
+                            77
+                        ],
+                        "point bottom left": [
+                            78,
+                            299
+                        ],
+                        "point bottom right": [
+                            233,
+                            299
+                        ],
+                        "height": 222,
+                        "width": 155,
+                        "area": 34410,
+                        "category": "without_mask",
+                        "name": "image84-bb78x77-155-222",
+                        "path": "/img/annotated_images/image84-bb78x77-155-222.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image85",
                 "path": "../img/resized/without_mask\\image85.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            142,
+                            1
+                        ],
+                        "point top right": [
+                            436,
+                            1
+                        ],
+                        "point bottom left": [
+                            142,
+                            292
+                        ],
+                        "point bottom right": [
+                            436,
+                            292
+                        ],
+                        "height": 291,
+                        "width": 294,
+                        "area": 85554,
+                        "category": "without_mask",
+                        "name": "image85-bb142x1-294-291",
+                        "path": "/img/annotated_images/image85-bb142x1-294-291.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image86",
                 "path": "../img/resized/without_mask\\image86.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            76,
+                            42
+                        ],
+                        "point top right": [
+                            375,
+                            42
+                        ],
+                        "point bottom left": [
+                            76,
+                            478
+                        ],
+                        "point bottom right": [
+                            375,
+                            478
+                        ],
+                        "height": 436,
+                        "width": 299,
+                        "area": 130364,
+                        "category": "without_mask",
+                        "name": "image86-bb76x42-299-436",
+                        "path": "/img/annotated_images/image86-bb76x42-299-436.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image87",
                 "path": "../img/resized/without_mask\\image87.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            66,
+                            66
+                        ],
+                        "point top right": [
+                            382,
+                            66
+                        ],
+                        "point bottom left": [
+                            66,
+                            478
+                        ],
+                        "point bottom right": [
+                            382,
+                            478
+                        ],
+                        "height": 412,
+                        "width": 316,
+                        "area": 130192,
+                        "category": "without_mask",
+                        "name": "image87-bb66x66-316-412",
+                        "path": "/img/annotated_images/image87-bb66x66-316-412.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image88",
                 "path": "../img/resized/without_mask\\image88.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            114,
+                            40
+                        ],
+                        "point top right": [
+                            407,
+                            40
+                        ],
+                        "point bottom left": [
+                            114,
+                            468
+                        ],
+                        "point bottom right": [
+                            407,
+                            468
+                        ],
+                        "height": 428,
+                        "width": 293,
+                        "area": 125404,
+                        "category": "without_mask",
+                        "name": "image88-bb114x40-293-428",
+                        "path": "/img/annotated_images/image88-bb114x40-293-428.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image89",
                 "path": "../img/resized/without_mask\\image89.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            112,
+                            62
+                        ],
+                        "point top right": [
+                            398,
+                            62
+                        ],
+                        "point bottom left": [
+                            112,
+                            473
+                        ],
+                        "point bottom right": [
+                            398,
+                            473
+                        ],
+                        "height": 411,
+                        "width": 286,
+                        "area": 117546,
+                        "category": "without_mask",
+                        "name": "image89-bb112x62-286-411",
+                        "path": "/img/annotated_images/image89-bb112x62-286-411.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image90",
                 "path": "../img/resized/without_mask\\image90.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            72,
+                            62
+                        ],
+                        "point top right": [
+                            414,
+                            62
+                        ],
+                        "point bottom left": [
+                            72,
+                            470
+                        ],
+                        "point bottom right": [
+                            414,
+                            470
+                        ],
+                        "height": 408,
+                        "width": 342,
+                        "area": 139536,
+                        "category": "without_mask",
+                        "name": "image90-bb72x62-342-408",
+                        "path": "/img/annotated_images/image90-bb72x62-342-408.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image91",
                 "path": "../img/resized/without_mask\\image91.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            90,
+                            50
+                        ],
+                        "point top right": [
+                            397,
+                            50
+                        ],
+                        "point bottom left": [
+                            90,
+                            480
+                        ],
+                        "point bottom right": [
+                            397,
+                            480
+                        ],
+                        "height": 430,
+                        "width": 307,
+                        "area": 132010,
+                        "category": "without_mask",
+                        "name": "image91-bb90x50-307-430",
+                        "path": "/img/annotated_images/image91-bb90x50-307-430.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image92",
                 "path": "../img/resized/without_mask\\image92.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            148,
+                            71
+                        ],
+                        "point top right": [
+                            393,
+                            71
+                        ],
+                        "point bottom left": [
+                            148,
+                            473
+                        ],
+                        "point bottom right": [
+                            393,
+                            473
+                        ],
+                        "height": 402,
+                        "width": 245,
+                        "area": 98490,
+                        "category": "without_mask",
+                        "name": "image92-bb148x71-245-402",
+                        "path": "/img/annotated_images/image92-bb148x71-245-402.png"
+                    }
+                ]
             }
         },
         {
@@ -1006,42 +2987,192 @@
             "image": {
                 "name": "image94",
                 "path": "../img/resized/without_mask\\image94.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            59,
+                            65
+                        ],
+                        "point top right": [
+                            392,
+                            65
+                        ],
+                        "point bottom left": [
+                            59,
+                            484
+                        ],
+                        "point bottom right": [
+                            392,
+                            484
+                        ],
+                        "height": 419,
+                        "width": 333,
+                        "area": 139527,
+                        "category": "without_mask",
+                        "name": "image94-bb59x65-333-419",
+                        "path": "/img/annotated_images/image94-bb59x65-333-419.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image95",
                 "path": "../img/resized/without_mask\\image95.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            256,
+                            29
+                        ],
+                        "point top right": [
+                            276,
+                            29
+                        ],
+                        "point bottom left": [
+                            256,
+                            55
+                        ],
+                        "point bottom right": [
+                            276,
+                            55
+                        ],
+                        "height": 26,
+                        "width": 20,
+                        "area": 520,
+                        "category": "without_mask",
+                        "name": "image95-bb256x29-20-26",
+                        "path": "/img/annotated_images/image95-bb256x29-20-26.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image96",
                 "path": "../img/resized/without_mask\\image96.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            278,
+                            94
+                        ],
+                        "point top right": [
+                            320,
+                            94
+                        ],
+                        "point bottom left": [
+                            278,
+                            146
+                        ],
+                        "point bottom right": [
+                            320,
+                            146
+                        ],
+                        "height": 52,
+                        "width": 42,
+                        "area": 2184,
+                        "category": "without_mask",
+                        "name": "image96-bb278x94-42-52",
+                        "path": "/img/annotated_images/image96-bb278x94-42-52.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image97",
                 "path": "../img/resized/without_mask\\image97.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            102,
+                            27
+                        ],
+                        "point top right": [
+                            398,
+                            27
+                        ],
+                        "point bottom left": [
+                            102,
+                            483
+                        ],
+                        "point bottom right": [
+                            398,
+                            483
+                        ],
+                        "height": 456,
+                        "width": 296,
+                        "area": 134976,
+                        "category": "without_mask",
+                        "name": "image97-bb102x27-296-456",
+                        "path": "/img/annotated_images/image97-bb102x27-296-456.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image98",
                 "path": "../img/resized/without_mask\\image98.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            160,
+                            45
+                        ],
+                        "point top right": [
+                            208,
+                            45
+                        ],
+                        "point bottom left": [
+                            160,
+                            121
+                        ],
+                        "point bottom right": [
+                            208,
+                            121
+                        ],
+                        "height": 76,
+                        "width": 48,
+                        "area": 3648,
+                        "category": "without_mask",
+                        "name": "image98-bb160x45-48-76",
+                        "path": "/img/annotated_images/image98-bb160x45-48-76.png"
+                    }
+                ]
             }
         },
         {
             "image": {
                 "name": "image99",
                 "path": "../img/resized/without_mask\\image99.png",
-                "boxes": "null"
+                "boxes": [
+                    {
+                        "point top left": [
+                            64,
+                            3
+                        ],
+                        "point top right": [
+                            173,
+                            3
+                        ],
+                        "point bottom left": [
+                            64,
+                            170
+                        ],
+                        "point bottom right": [
+                            173,
+                            170
+                        ],
+                        "height": 167,
+                        "width": 109,
+                        "area": 18203,
+                        "category": "without_mask",
+                        "name": "image99-bb64x3-109-167",
+                        "path": "/img/annotated_images/image99-bb64x3-109-167.png"
+                    }
+                ]
             }
         }
     ]
