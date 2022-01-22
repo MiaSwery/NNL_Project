@@ -154,13 +154,13 @@ def crop_image(rect_id):
     new_image = new_image.resize((180,180))
 
     try : 
-        new_image.save("../img/annotated_images/" + category + "/" + new_name_picture +".png")
+        new_image.save("../img/annotated_images/" + new_name_picture +".png")
     except :
         directory = category
         parent_directory = "../img/annotated_images"
         path = os.path.join(parent_directory, directory)
         os.mkdir(path)
-        new_image.save("../img/annotated_images/" + category + "/" + new_name_picture +".png")
+        new_image.save("../img/annotated_images/" + new_name_picture +".png")
 
 
 
@@ -591,7 +591,7 @@ def convert_box_to_json(co1,co2,height,width,area,category, rect_id,nameimage):
 
     coord = coords(co1,co2)
 
-    new_name_picture = nameimage + "-bb" + str(coord[0][0]) + "x" + str(coord[0][1]) + "-" + str(width) + "-" + str(height)
+    new_name_picture = nameimage + "-bb-" + str(coord[0][0]) + "x" + str(coord[0][1]) + "-" + str(width) + "-" + str(height)
 
     return {'point top left' : coord[0],
             'point top right' : coord[1],
@@ -602,7 +602,7 @@ def convert_box_to_json(co1,co2,height,width,area,category, rect_id,nameimage):
             'area' : area, 
             'category' : category, 
             'name'	: new_name_picture,
-            'path' : "/img/annotated_images/" + new_name_picture + ".png"}
+            'path' : "../img/annotated_images/" + new_name_picture + ".png"}
 
 # Function to generate the whole json
 def generate_json():
@@ -658,11 +658,7 @@ def start_app():
     # Deleting the previous annotated images 
     annotated = glob.glob('../img/annotated_images/*')
     for f in annotated:
-    	for g in glob.glob(f+'/*'):
-        	os.remove(g)
-
-    for f in annotated:
-    	os.rmdir(f)
+            os.remove(f)
 
     list_path = glob.glob("../img/resized/with_mask/*png") + glob.glob("../img/resized/without_mask/*png")  # All the paths
     #list_path = list_path[0:7]

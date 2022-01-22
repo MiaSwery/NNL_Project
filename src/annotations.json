@@ -26,8 +26,8 @@
                         "width": 102,
                         "area": 12240,
                         "category": "with_mask",
-                        "name": "image0-bb199x70-102-120",
-                        "path": "/img/annotated_images/image0-bb199x70-102-120.png"
+                        "name": "image0-bb-199x70-102-120",
+                        "path": "../img/annotated_images/image0-bb-199x70-102-120.png"
                     }
                 ]
             }
@@ -58,8 +58,8 @@
                         "width": 72,
                         "area": 7272,
                         "category": "with_mask",
-                        "name": "image1-bb337x75-72-101",
-                        "path": "/img/annotated_images/image1-bb337x75-72-101.png"
+                        "name": "image1-bb-337x75-72-101",
+                        "path": "../img/annotated_images/image1-bb-337x75-72-101.png"
                     }
                 ]
             }
@@ -90,8 +90,8 @@
                         "width": 51,
                         "area": 3315,
                         "category": "with_mask",
-                        "name": "image10-bb315x22-51-65",
-                        "path": "/img/annotated_images/image10-bb315x22-51-65.png"
+                        "name": "image10-bb-315x22-51-65",
+                        "path": "../img/annotated_images/image10-bb-315x22-51-65.png"
                     }
                 ]
             }
@@ -122,8 +122,8 @@
                         "width": 48,
                         "area": 3936,
                         "category": "with_mask",
-                        "name": "image11-bb235x52-48-82",
-                        "path": "/img/annotated_images/image11-bb235x52-48-82.png"
+                        "name": "image11-bb-235x52-48-82",
+                        "path": "../img/annotated_images/image11-bb-235x52-48-82.png"
                     }
                 ]
             }
@@ -154,8 +154,8 @@
                         "width": 62,
                         "area": 5704,
                         "category": "with_mask",
-                        "name": "image12-bb221x38-62-92",
-                        "path": "/img/annotated_images/image12-bb221x38-62-92.png"
+                        "name": "image12-bb-221x38-62-92",
+                        "path": "../img/annotated_images/image12-bb-221x38-62-92.png"
                     }
                 ]
             }
@@ -186,8 +186,8 @@
                         "width": 53,
                         "area": 3763,
                         "category": "with_mask",
-                        "name": "image13-bb211x39-53-71",
-                        "path": "/img/annotated_images/image13-bb211x39-53-71.png"
+                        "name": "image13-bb-211x39-53-71",
+                        "path": "../img/annotated_images/image13-bb-211x39-53-71.png"
                     }
                 ]
             }
@@ -218,8 +218,8 @@
                         "width": 63,
                         "area": 4851,
                         "category": "with_mask",
-                        "name": "image14-bb243x69-63-77",
-                        "path": "/img/annotated_images/image14-bb243x69-63-77.png"
+                        "name": "image14-bb-243x69-63-77",
+                        "path": "../img/annotated_images/image14-bb-243x69-63-77.png"
                     }
                 ]
             }
@@ -250,8 +250,8 @@
                         "width": 108,
                         "area": 14580,
                         "category": "with_mask",
-                        "name": "image15-bb119x7-108-135",
-                        "path": "/img/annotated_images/image15-bb119x7-108-135.png"
+                        "name": "image15-bb-119x7-108-135",
+                        "path": "../img/annotated_images/image15-bb-119x7-108-135.png"
                     }
                 ]
             }
@@ -282,8 +282,8 @@
                         "width": 63,
                         "area": 6237,
                         "category": "with_mask",
-                        "name": "image16-bb229x97-63-99",
-                        "path": "/img/annotated_images/image16-bb229x97-63-99.png"
+                        "name": "image16-bb-229x97-63-99",
+                        "path": "../img/annotated_images/image16-bb-229x97-63-99.png"
                     }
                 ]
             }
@@ -314,8 +314,8 @@
                         "width": 97,
                         "area": 13968,
                         "category": "with_mask",
-                        "name": "image17-bb301x48-97-144",
-                        "path": "/img/annotated_images/image17-bb301x48-97-144.png"
+                        "name": "image17-bb-301x48-97-144",
+                        "path": "../img/annotated_images/image17-bb-301x48-97-144.png"
                     }
                 ]
             }
@@ -346,8 +346,8 @@
                         "width": 74,
                         "area": 7252,
                         "category": "with_mask",
-                        "name": "image18-bb113x57-74-98",
-                        "path": "/img/annotated_images/image18-bb113x57-74-98.png"
+                        "name": "image18-bb-113x57-74-98",
+                        "path": "../img/annotated_images/image18-bb-113x57-74-98.png"
                     }
                 ]
             }
@@ -378,8 +378,8 @@
                         "width": 76,
                         "area": 7296,
                         "category": "with_mask",
-                        "name": "image19-bb223x140-76-96",
-                        "path": "/img/annotated_images/image19-bb223x140-76-96.png"
+                        "name": "image19-bb-223x140-76-96",
+                        "path": "../img/annotated_images/image19-bb-223x140-76-96.png"
                     }
                 ]
             }
@@ -410,8 +410,8 @@
                         "width": 48,
                         "area": 2880,
                         "category": "with_mask",
-                        "name": "image2-bb367x96-48-60",
-                        "path": "/img/annotated_images/image2-bb367x96-48-60.png"
+                        "name": "image2-bb-367x96-48-60",
+                        "path": "../img/annotated_images/image2-bb-367x96-48-60.png"
                     }
                 ]
             }
@@ -442,8 +442,8 @@
                         "width": 56,
                         "area": 4088,
                         "category": "with_mask",
-                        "name": "image20-bb95x15-56-73",
-                        "path": "/img/annotated_images/image20-bb95x15-56-73.png"
+                        "name": "image20-bb-95x15-56-73",
+                        "path": "../img/annotated_images/image20-bb-95x15-56-73.png"
                     }
                 ]
             }
@@ -474,8 +474,8 @@
                         "width": 31,
                         "area": 1209,
                         "category": "with_mask",
-                        "name": "image21-bb181x49-31-39",
-                        "path": "/img/annotated_images/image21-bb181x49-31-39.png"
+                        "name": "image21-bb-181x49-31-39",
+                        "path": "../img/annotated_images/image21-bb-181x49-31-39.png"
                     }
                 ]
             }
@@ -506,8 +506,8 @@
                         "width": 29,
                         "area": 928,
                         "category": "with_mask",
-                        "name": "image22-bb308x34-29-32",
-                        "path": "/img/annotated_images/image22-bb308x34-29-32.png"
+                        "name": "image22-bb-308x34-29-32",
+                        "path": "../img/annotated_images/image22-bb-308x34-29-32.png"
                     }
                 ]
             }
@@ -538,8 +538,8 @@
                         "width": 102,
                         "area": 14280,
                         "category": "with_mask",
-                        "name": "image23-bb146x65-102-140",
-                        "path": "/img/annotated_images/image23-bb146x65-102-140.png"
+                        "name": "image23-bb-146x65-102-140",
+                        "path": "../img/annotated_images/image23-bb-146x65-102-140.png"
                     }
                 ]
             }
@@ -570,8 +570,8 @@
                         "width": 248,
                         "area": 91016,
                         "category": "with_mask",
-                        "name": "image24-bb81x13-248-367",
-                        "path": "/img/annotated_images/image24-bb81x13-248-367.png"
+                        "name": "image24-bb-81x13-248-367",
+                        "path": "../img/annotated_images/image24-bb-81x13-248-367.png"
                     }
                 ]
             }
@@ -602,8 +602,8 @@
                         "width": 180,
                         "area": 37800,
                         "category": "with_mask",
-                        "name": "image25-bb157x9-180-210",
-                        "path": "/img/annotated_images/image25-bb157x9-180-210.png"
+                        "name": "image25-bb-157x9-180-210",
+                        "path": "../img/annotated_images/image25-bb-157x9-180-210.png"
                     }
                 ]
             }
@@ -634,8 +634,8 @@
                         "width": 139,
                         "area": 27522,
                         "category": "with_mask",
-                        "name": "image26-bb156x111-139-198",
-                        "path": "/img/annotated_images/image26-bb156x111-139-198.png"
+                        "name": "image26-bb-156x111-139-198",
+                        "path": "../img/annotated_images/image26-bb-156x111-139-198.png"
                     }
                 ]
             }
@@ -666,8 +666,8 @@
                         "width": 235,
                         "area": 73790,
                         "category": "with_mask",
-                        "name": "image27-bb178x120-235-314",
-                        "path": "/img/annotated_images/image27-bb178x120-235-314.png"
+                        "name": "image27-bb-178x120-235-314",
+                        "path": "../img/annotated_images/image27-bb-178x120-235-314.png"
                     }
                 ]
             }
@@ -698,8 +698,8 @@
                         "width": 190,
                         "area": 43890,
                         "category": "with_mask",
-                        "name": "image28-bb103x31-190-231",
-                        "path": "/img/annotated_images/image28-bb103x31-190-231.png"
+                        "name": "image28-bb-103x31-190-231",
+                        "path": "../img/annotated_images/image28-bb-103x31-190-231.png"
                     }
                 ]
             }
@@ -730,8 +730,8 @@
                         "width": 113,
                         "area": 19775,
                         "category": "with_mask",
-                        "name": "image29-bb198x26-113-175",
-                        "path": "/img/annotated_images/image29-bb198x26-113-175.png"
+                        "name": "image29-bb-198x26-113-175",
+                        "path": "../img/annotated_images/image29-bb-198x26-113-175.png"
                     }
                 ]
             }
@@ -762,8 +762,8 @@
                         "width": 31,
                         "area": 1147,
                         "category": "with_mask",
-                        "name": "image3-bb225x127-31-37",
-                        "path": "/img/annotated_images/image3-bb225x127-31-37.png"
+                        "name": "image3-bb-225x127-31-37",
+                        "path": "../img/annotated_images/image3-bb-225x127-31-37.png"
                     }
                 ]
             }
@@ -794,8 +794,8 @@
                         "width": 219,
                         "area": 68109,
                         "category": "with_mask",
-                        "name": "image30-bb140x36-219-311",
-                        "path": "/img/annotated_images/image30-bb140x36-219-311.png"
+                        "name": "image30-bb-140x36-219-311",
+                        "path": "../img/annotated_images/image30-bb-140x36-219-311.png"
                     }
                 ]
             }
@@ -826,8 +826,8 @@
                         "width": 166,
                         "area": 42330,
                         "category": "with_mask",
-                        "name": "image31-bb114x3-166-255",
-                        "path": "/img/annotated_images/image31-bb114x3-166-255.png"
+                        "name": "image31-bb-114x3-166-255",
+                        "path": "../img/annotated_images/image31-bb-114x3-166-255.png"
                     }
                 ]
             }
@@ -858,8 +858,8 @@
                         "width": 209,
                         "area": 57057,
                         "category": "with_mask",
-                        "name": "image32-bb35x35-209-273",
-                        "path": "/img/annotated_images/image32-bb35x35-209-273.png"
+                        "name": "image32-bb-35x35-209-273",
+                        "path": "../img/annotated_images/image32-bb-35x35-209-273.png"
                     }
                 ]
             }
@@ -890,8 +890,8 @@
                         "width": 149,
                         "area": 26224,
                         "category": "with_mask",
-                        "name": "image33-bb177x91-149-176",
-                        "path": "/img/annotated_images/image33-bb177x91-149-176.png"
+                        "name": "image33-bb-177x91-149-176",
+                        "path": "../img/annotated_images/image33-bb-177x91-149-176.png"
                     }
                 ]
             }
@@ -922,8 +922,8 @@
                         "width": 99,
                         "area": 13860,
                         "category": "with_mask",
-                        "name": "image34-bb227x7-99-140",
-                        "path": "/img/annotated_images/image34-bb227x7-99-140.png"
+                        "name": "image34-bb-227x7-99-140",
+                        "path": "../img/annotated_images/image34-bb-227x7-99-140.png"
                     }
                 ]
             }
@@ -954,8 +954,8 @@
                         "width": 87,
                         "area": 10788,
                         "category": "with_mask",
-                        "name": "image35-bb124x49-87-124",
-                        "path": "/img/annotated_images/image35-bb124x49-87-124.png"
+                        "name": "image35-bb-124x49-87-124",
+                        "path": "../img/annotated_images/image35-bb-124x49-87-124.png"
                     }
                 ]
             }
@@ -986,8 +986,8 @@
                         "width": 240,
                         "area": 66240,
                         "category": "with_mask",
-                        "name": "image36-bb81x0-240-276",
-                        "path": "/img/annotated_images/image36-bb81x0-240-276.png"
+                        "name": "image36-bb-81x0-240-276",
+                        "path": "../img/annotated_images/image36-bb-81x0-240-276.png"
                     }
                 ]
             }
@@ -1018,8 +1018,8 @@
                         "width": 135,
                         "area": 25920,
                         "category": "with_mask",
-                        "name": "image37-bb197x55-135-192",
-                        "path": "/img/annotated_images/image37-bb197x55-135-192.png"
+                        "name": "image37-bb-197x55-135-192",
+                        "path": "../img/annotated_images/image37-bb-197x55-135-192.png"
                     }
                 ]
             }
@@ -1050,8 +1050,8 @@
                         "width": 286,
                         "area": 102388,
                         "category": "with_mask",
-                        "name": "image38-bb114x1-286-358",
-                        "path": "/img/annotated_images/image38-bb114x1-286-358.png"
+                        "name": "image38-bb-114x1-286-358",
+                        "path": "../img/annotated_images/image38-bb-114x1-286-358.png"
                     }
                 ]
             }
@@ -1082,8 +1082,8 @@
                         "width": 148,
                         "area": 28416,
                         "category": "with_mask",
-                        "name": "image39-bb190x20-148-192",
-                        "path": "/img/annotated_images/image39-bb190x20-148-192.png"
+                        "name": "image39-bb-190x20-148-192",
+                        "path": "../img/annotated_images/image39-bb-190x20-148-192.png"
                     }
                 ]
             }
@@ -1114,8 +1114,8 @@
                         "width": 40,
                         "area": 2400,
                         "category": "with_mask",
-                        "name": "image4-bb198x8-40-60",
-                        "path": "/img/annotated_images/image4-bb198x8-40-60.png"
+                        "name": "image4-bb-198x8-40-60",
+                        "path": "../img/annotated_images/image4-bb-198x8-40-60.png"
                     }
                 ]
             }
@@ -1146,8 +1146,8 @@
                         "width": 115,
                         "area": 22425,
                         "category": "with_mask",
-                        "name": "image40-bb132x36-115-195",
-                        "path": "/img/annotated_images/image40-bb132x36-115-195.png"
+                        "name": "image40-bb-132x36-115-195",
+                        "path": "../img/annotated_images/image40-bb-132x36-115-195.png"
                     }
                 ]
             }
@@ -1178,8 +1178,8 @@
                         "width": 230,
                         "area": 64860,
                         "category": "with_mask",
-                        "name": "image41-bb111x1-230-282",
-                        "path": "/img/annotated_images/image41-bb111x1-230-282.png"
+                        "name": "image41-bb-111x1-230-282",
+                        "path": "../img/annotated_images/image41-bb-111x1-230-282.png"
                     }
                 ]
             }
@@ -1210,8 +1210,8 @@
                         "width": 225,
                         "area": 62775,
                         "category": "with_mask",
-                        "name": "image42-bb135x22-225-279",
-                        "path": "/img/annotated_images/image42-bb135x22-225-279.png"
+                        "name": "image42-bb-135x22-225-279",
+                        "path": "../img/annotated_images/image42-bb-135x22-225-279.png"
                     }
                 ]
             }
@@ -1242,8 +1242,8 @@
                         "width": 324,
                         "area": 139320,
                         "category": "with_mask",
-                        "name": "image43-bb99x14-324-430",
-                        "path": "/img/annotated_images/image43-bb99x14-324-430.png"
+                        "name": "image43-bb-99x14-324-430",
+                        "path": "../img/annotated_images/image43-bb-99x14-324-430.png"
                     }
                 ]
             }
@@ -1274,8 +1274,8 @@
                         "width": 121,
                         "area": 17666,
                         "category": "with_mask",
-                        "name": "image44-bb186x74-121-146",
-                        "path": "/img/annotated_images/image44-bb186x74-121-146.png"
+                        "name": "image44-bb-186x74-121-146",
+                        "path": "../img/annotated_images/image44-bb-186x74-121-146.png"
                     }
                 ]
             }
@@ -1306,8 +1306,8 @@
                         "width": 101,
                         "area": 15150,
                         "category": "with_mask",
-                        "name": "image45-bb237x54-101-150",
-                        "path": "/img/annotated_images/image45-bb237x54-101-150.png"
+                        "name": "image45-bb-237x54-101-150",
+                        "path": "../img/annotated_images/image45-bb-237x54-101-150.png"
                     }
                 ]
             }
@@ -1338,8 +1338,8 @@
                         "width": 285,
                         "area": 102885,
                         "category": "with_mask",
-                        "name": "image46-bb94x1-285-361",
-                        "path": "/img/annotated_images/image46-bb94x1-285-361.png"
+                        "name": "image46-bb-94x1-285-361",
+                        "path": "../img/annotated_images/image46-bb-94x1-285-361.png"
                     }
                 ]
             }
@@ -1370,8 +1370,8 @@
                         "width": 195,
                         "area": 47580,
                         "category": "with_mask",
-                        "name": "image47-bb1x1-195-244",
-                        "path": "/img/annotated_images/image47-bb1x1-195-244.png"
+                        "name": "image47-bb-1x1-195-244",
+                        "path": "../img/annotated_images/image47-bb-1x1-195-244.png"
                     }
                 ]
             }
@@ -1402,8 +1402,8 @@
                         "width": 188,
                         "area": 49256,
                         "category": "with_mask",
-                        "name": "image48-bb121x15-188-262",
-                        "path": "/img/annotated_images/image48-bb121x15-188-262.png"
+                        "name": "image48-bb-121x15-188-262",
+                        "path": "../img/annotated_images/image48-bb-121x15-188-262.png"
                     }
                 ]
             }
@@ -1434,8 +1434,8 @@
                         "width": 118,
                         "area": 19588,
                         "category": "with_mask",
-                        "name": "image49-bb188x28-118-166",
-                        "path": "/img/annotated_images/image49-bb188x28-118-166.png"
+                        "name": "image49-bb-188x28-118-166",
+                        "path": "../img/annotated_images/image49-bb-188x28-118-166.png"
                     }
                 ]
             }
@@ -1466,8 +1466,8 @@
                         "width": 108,
                         "area": 15336,
                         "category": "with_mask",
-                        "name": "image5-bb216x80-108-142",
-                        "path": "/img/annotated_images/image5-bb216x80-108-142.png"
+                        "name": "image5-bb-216x80-108-142",
+                        "path": "../img/annotated_images/image5-bb-216x80-108-142.png"
                     }
                 ]
             }
@@ -1498,8 +1498,8 @@
                         "width": 31,
                         "area": 1085,
                         "category": "with_mask",
-                        "name": "image6-bb182x9-31-35",
-                        "path": "/img/annotated_images/image6-bb182x9-31-35.png"
+                        "name": "image6-bb-182x9-31-35",
+                        "path": "../img/annotated_images/image6-bb-182x9-31-35.png"
                     }
                 ]
             }
@@ -1530,8 +1530,8 @@
                         "width": 85,
                         "area": 10285,
                         "category": "with_mask",
-                        "name": "image7-bb124x29-85-121",
-                        "path": "/img/annotated_images/image7-bb124x29-85-121.png"
+                        "name": "image7-bb-124x29-85-121",
+                        "path": "../img/annotated_images/image7-bb-124x29-85-121.png"
                     }
                 ]
             }
@@ -1562,8 +1562,8 @@
                         "width": 66,
                         "area": 5742,
                         "category": "with_mask",
-                        "name": "image8-bb217x22-66-87",
-                        "path": "/img/annotated_images/image8-bb217x22-66-87.png"
+                        "name": "image8-bb-217x22-66-87",
+                        "path": "../img/annotated_images/image8-bb-217x22-66-87.png"
                     }
                 ]
             }
@@ -1594,8 +1594,8 @@
                         "width": 49,
                         "area": 3675,
                         "category": "with_mask",
-                        "name": "image9-bb214x15-49-75",
-                        "path": "/img/annotated_images/image9-bb214x15-49-75.png"
+                        "name": "image9-bb-214x15-49-75",
+                        "path": "../img/annotated_images/image9-bb-214x15-49-75.png"
                     }
                 ]
             }
@@ -1626,8 +1626,8 @@
                         "width": 54,
                         "area": 2754,
                         "category": "without_mask",
-                        "name": "image50-bb127x6-54-51",
-                        "path": "/img/annotated_images/image50-bb127x6-54-51.png"
+                        "name": "image50-bb-127x6-54-51",
+                        "path": "../img/annotated_images/image50-bb-127x6-54-51.png"
                     }
                 ]
             }
@@ -1658,8 +1658,8 @@
                         "width": 28,
                         "area": 1092,
                         "category": "without_mask",
-                        "name": "image51-bb261x90-28-39",
-                        "path": "/img/annotated_images/image51-bb261x90-28-39.png"
+                        "name": "image51-bb-261x90-28-39",
+                        "path": "../img/annotated_images/image51-bb-261x90-28-39.png"
                     }
                 ]
             }
@@ -1690,8 +1690,8 @@
                         "width": 28,
                         "area": 1064,
                         "category": "without_mask",
-                        "name": "image52-bb302x4-28-38",
-                        "path": "/img/annotated_images/image52-bb302x4-28-38.png"
+                        "name": "image52-bb-302x4-28-38",
+                        "path": "../img/annotated_images/image52-bb-302x4-28-38.png"
                     }
                 ]
             }
@@ -1722,8 +1722,8 @@
                         "width": 46,
                         "area": 2254,
                         "category": "without_mask",
-                        "name": "image53-bb137x61-46-49",
-                        "path": "/img/annotated_images/image53-bb137x61-46-49.png"
+                        "name": "image53-bb-137x61-46-49",
+                        "path": "../img/annotated_images/image53-bb-137x61-46-49.png"
                     }
                 ]
             }
@@ -1754,8 +1754,8 @@
                         "width": 33,
                         "area": 1254,
                         "category": "without_mask",
-                        "name": "image54-bb351x100-33-38",
-                        "path": "/img/annotated_images/image54-bb351x100-33-38.png"
+                        "name": "image54-bb-351x100-33-38",
+                        "path": "../img/annotated_images/image54-bb-351x100-33-38.png"
                     }
                 ]
             }
@@ -1786,8 +1786,8 @@
                         "width": 30,
                         "area": 960,
                         "category": "without_mask",
-                        "name": "image55-bb255x88-30-32",
-                        "path": "/img/annotated_images/image55-bb255x88-30-32.png"
+                        "name": "image55-bb-255x88-30-32",
+                        "path": "../img/annotated_images/image55-bb-255x88-30-32.png"
                     }
                 ]
             }
@@ -1818,8 +1818,8 @@
                         "width": 54,
                         "area": 3888,
                         "category": "without_mask",
-                        "name": "image56-bb93x16-54-72",
-                        "path": "/img/annotated_images/image56-bb93x16-54-72.png"
+                        "name": "image56-bb-93x16-54-72",
+                        "path": "../img/annotated_images/image56-bb-93x16-54-72.png"
                     }
                 ]
             }
@@ -1850,8 +1850,8 @@
                         "width": 34,
                         "area": 1360,
                         "category": "without_mask",
-                        "name": "image57-bb306x118-34-40",
-                        "path": "/img/annotated_images/image57-bb306x118-34-40.png"
+                        "name": "image57-bb-306x118-34-40",
+                        "path": "../img/annotated_images/image57-bb-306x118-34-40.png"
                     }
                 ]
             }
@@ -1882,8 +1882,8 @@
                         "width": 43,
                         "area": 2709,
                         "category": "without_mask",
-                        "name": "image58-bb201x52-43-63",
-                        "path": "/img/annotated_images/image58-bb201x52-43-63.png"
+                        "name": "image58-bb-201x52-43-63",
+                        "path": "../img/annotated_images/image58-bb-201x52-43-63.png"
                     }
                 ]
             }
@@ -1914,8 +1914,8 @@
                         "width": 34,
                         "area": 1734,
                         "category": "without_mask",
-                        "name": "image59-bb151x38-34-51",
-                        "path": "/img/annotated_images/image59-bb151x38-34-51.png"
+                        "name": "image59-bb-151x38-34-51",
+                        "path": "../img/annotated_images/image59-bb-151x38-34-51.png"
                     }
                 ]
             }
@@ -1946,8 +1946,8 @@
                         "width": 54,
                         "area": 3510,
                         "category": "without_mask",
-                        "name": "image60-bb287x39-54-65",
-                        "path": "/img/annotated_images/image60-bb287x39-54-65.png"
+                        "name": "image60-bb-287x39-54-65",
+                        "path": "../img/annotated_images/image60-bb-287x39-54-65.png"
                     }
                 ]
             }
@@ -1978,8 +1978,8 @@
                         "width": 51,
                         "area": 3723,
                         "category": "without_mask",
-                        "name": "image61-bb205x68-51-73",
-                        "path": "/img/annotated_images/image61-bb205x68-51-73.png"
+                        "name": "image61-bb-205x68-51-73",
+                        "path": "../img/annotated_images/image61-bb-205x68-51-73.png"
                     }
                 ]
             }
@@ -2010,8 +2010,8 @@
                         "width": 44,
                         "area": 2640,
                         "category": "without_mask",
-                        "name": "image62-bb291x43-44-60",
-                        "path": "/img/annotated_images/image62-bb291x43-44-60.png"
+                        "name": "image62-bb-291x43-44-60",
+                        "path": "../img/annotated_images/image62-bb-291x43-44-60.png"
                     }
                 ]
             }
@@ -2042,8 +2042,8 @@
                         "width": 38,
                         "area": 3002,
                         "category": "without_mask",
-                        "name": "image63-bb39x116-38-79",
-                        "path": "/img/annotated_images/image63-bb39x116-38-79.png"
+                        "name": "image63-bb-39x116-38-79",
+                        "path": "../img/annotated_images/image63-bb-39x116-38-79.png"
                     }
                 ]
             }
@@ -2074,8 +2074,8 @@
                         "width": 50,
                         "area": 3550,
                         "category": "without_mask",
-                        "name": "image64-bb191x52-50-71",
-                        "path": "/img/annotated_images/image64-bb191x52-50-71.png"
+                        "name": "image64-bb-191x52-50-71",
+                        "path": "../img/annotated_images/image64-bb-191x52-50-71.png"
                     }
                 ]
             }
@@ -2106,8 +2106,8 @@
                         "width": 38,
                         "area": 1634,
                         "category": "without_mask",
-                        "name": "image65-bb209x40-38-43",
-                        "path": "/img/annotated_images/image65-bb209x40-38-43.png"
+                        "name": "image65-bb-209x40-38-43",
+                        "path": "../img/annotated_images/image65-bb-209x40-38-43.png"
                     }
                 ]
             }
@@ -2138,8 +2138,8 @@
                         "width": 72,
                         "area": 6552,
                         "category": "without_mask",
-                        "name": "image66-bb201x63-72-91",
-                        "path": "/img/annotated_images/image66-bb201x63-72-91.png"
+                        "name": "image66-bb-201x63-72-91",
+                        "path": "../img/annotated_images/image66-bb-201x63-72-91.png"
                     }
                 ]
             }
@@ -2170,8 +2170,8 @@
                         "width": 34,
                         "area": 1292,
                         "category": "without_mask",
-                        "name": "image67-bb397x9-34-38",
-                        "path": "/img/annotated_images/image67-bb397x9-34-38.png"
+                        "name": "image67-bb-397x9-34-38",
+                        "path": "../img/annotated_images/image67-bb-397x9-34-38.png"
                     }
                 ]
             }
@@ -2202,8 +2202,8 @@
                         "width": 48,
                         "area": 2928,
                         "category": "without_mask",
-                        "name": "image68-bb133x34-48-61",
-                        "path": "/img/annotated_images/image68-bb133x34-48-61.png"
+                        "name": "image68-bb-133x34-48-61",
+                        "path": "../img/annotated_images/image68-bb-133x34-48-61.png"
                     }
                 ]
             }
@@ -2234,8 +2234,8 @@
                         "width": 38,
                         "area": 2052,
                         "category": "without_mask",
-                        "name": "image69-bb241x17-38-54",
-                        "path": "/img/annotated_images/image69-bb241x17-38-54.png"
+                        "name": "image69-bb-241x17-38-54",
+                        "path": "../img/annotated_images/image69-bb-241x17-38-54.png"
                     }
                 ]
             }
@@ -2266,8 +2266,8 @@
                         "width": 42,
                         "area": 2016,
                         "category": "without_mask",
-                        "name": "image70-bb237x1-42-48",
-                        "path": "/img/annotated_images/image70-bb237x1-42-48.png"
+                        "name": "image70-bb-237x1-42-48",
+                        "path": "../img/annotated_images/image70-bb-237x1-42-48.png"
                     }
                 ]
             }
@@ -2298,8 +2298,8 @@
                         "width": 71,
                         "area": 5964,
                         "category": "without_mask",
-                        "name": "image71-bb39x7-71-84",
-                        "path": "/img/annotated_images/image71-bb39x7-71-84.png"
+                        "name": "image71-bb-39x7-71-84",
+                        "path": "../img/annotated_images/image71-bb-39x7-71-84.png"
                     }
                 ]
             }
@@ -2330,8 +2330,8 @@
                         "width": 263,
                         "area": 80478,
                         "category": "without_mask",
-                        "name": "image72-bb139x8-263-306",
-                        "path": "/img/annotated_images/image72-bb139x8-263-306.png"
+                        "name": "image72-bb-139x8-263-306",
+                        "path": "../img/annotated_images/image72-bb-139x8-263-306.png"
                     }
                 ]
             }
@@ -2362,8 +2362,8 @@
                         "width": 103,
                         "area": 14523,
                         "category": "without_mask",
-                        "name": "image73-bb90x2-103-141",
-                        "path": "/img/annotated_images/image73-bb90x2-103-141.png"
+                        "name": "image73-bb-90x2-103-141",
+                        "path": "../img/annotated_images/image73-bb-90x2-103-141.png"
                     }
                 ]
             }
@@ -2394,8 +2394,8 @@
                         "width": 118,
                         "area": 16166,
                         "category": "without_mask",
-                        "name": "image74-bb65x1-118-137",
-                        "path": "/img/annotated_images/image74-bb65x1-118-137.png"
+                        "name": "image74-bb-65x1-118-137",
+                        "path": "../img/annotated_images/image74-bb-65x1-118-137.png"
                     }
                 ]
             }
@@ -2426,8 +2426,8 @@
                         "width": 178,
                         "area": 32218,
                         "category": "without_mask",
-                        "name": "image75-bb59x0-178-181",
-                        "path": "/img/annotated_images/image75-bb59x0-178-181.png"
+                        "name": "image75-bb-59x0-178-181",
+                        "path": "../img/annotated_images/image75-bb-59x0-178-181.png"
                     }
                 ]
             }
@@ -2458,8 +2458,8 @@
                         "width": 102,
                         "area": 13566,
                         "category": "without_mask",
-                        "name": "image76-bb144x1-102-133",
-                        "path": "/img/annotated_images/image76-bb144x1-102-133.png"
+                        "name": "image76-bb-144x1-102-133",
+                        "path": "../img/annotated_images/image76-bb-144x1-102-133.png"
                     }
                 ]
             }
@@ -2490,8 +2490,8 @@
                         "width": 115,
                         "area": 17710,
                         "category": "without_mask",
-                        "name": "image77-bb52x25-115-154",
-                        "path": "/img/annotated_images/image77-bb52x25-115-154.png"
+                        "name": "image77-bb-52x25-115-154",
+                        "path": "../img/annotated_images/image77-bb-52x25-115-154.png"
                     }
                 ]
             }
@@ -2522,8 +2522,8 @@
                         "width": 80,
                         "area": 9520,
                         "category": "without_mask",
-                        "name": "image78-bb141x23-80-119",
-                        "path": "/img/annotated_images/image78-bb141x23-80-119.png"
+                        "name": "image78-bb-141x23-80-119",
+                        "path": "../img/annotated_images/image78-bb-141x23-80-119.png"
                     }
                 ]
             }
@@ -2554,8 +2554,8 @@
                         "width": 107,
                         "area": 12733,
                         "category": "without_mask",
-                        "name": "image79-bb101x0-107-119",
-                        "path": "/img/annotated_images/image79-bb101x0-107-119.png"
+                        "name": "image79-bb-101x0-107-119",
+                        "path": "../img/annotated_images/image79-bb-101x0-107-119.png"
                     }
                 ]
             }
@@ -2586,8 +2586,8 @@
                         "width": 135,
                         "area": 21330,
                         "category": "without_mask",
-                        "name": "image80-bb37x2-135-158",
-                        "path": "/img/annotated_images/image80-bb37x2-135-158.png"
+                        "name": "image80-bb-37x2-135-158",
+                        "path": "../img/annotated_images/image80-bb-37x2-135-158.png"
                     }
                 ]
             }
@@ -2618,8 +2618,8 @@
                         "width": 91,
                         "area": 11557,
                         "category": "without_mask",
-                        "name": "image81-bb112x6-91-127",
-                        "path": "/img/annotated_images/image81-bb112x6-91-127.png"
+                        "name": "image81-bb-112x6-91-127",
+                        "path": "../img/annotated_images/image81-bb-112x6-91-127.png"
                     }
                 ]
             }
@@ -2650,8 +2650,8 @@
                         "width": 166,
                         "area": 34528,
                         "category": "without_mask",
-                        "name": "image82-bb33x6-166-208",
-                        "path": "/img/annotated_images/image82-bb33x6-166-208.png"
+                        "name": "image82-bb-33x6-166-208",
+                        "path": "../img/annotated_images/image82-bb-33x6-166-208.png"
                     }
                 ]
             }
@@ -2682,8 +2682,8 @@
                         "width": 256,
                         "area": 89088,
                         "category": "without_mask",
-                        "name": "image83-bb165x23-256-348",
-                        "path": "/img/annotated_images/image83-bb165x23-256-348.png"
+                        "name": "image83-bb-165x23-256-348",
+                        "path": "../img/annotated_images/image83-bb-165x23-256-348.png"
                     }
                 ]
             }
@@ -2714,8 +2714,8 @@
                         "width": 173,
                         "area": 41693,
                         "category": "without_mask",
-                        "name": "image84-bb66x62-173-241",
-                        "path": "/img/annotated_images/image84-bb66x62-173-241.png"
+                        "name": "image84-bb-66x62-173-241",
+                        "path": "../img/annotated_images/image84-bb-66x62-173-241.png"
                     }
                 ]
             }
@@ -2746,8 +2746,8 @@
                         "width": 309,
                         "area": 90846,
                         "category": "without_mask",
-                        "name": "image85-bb132x0-309-294",
-                        "path": "/img/annotated_images/image85-bb132x0-309-294.png"
+                        "name": "image85-bb-132x0-309-294",
+                        "path": "../img/annotated_images/image85-bb-132x0-309-294.png"
                     }
                 ]
             }
@@ -2778,8 +2778,8 @@
                         "width": 302,
                         "area": 126236,
                         "category": "without_mask",
-                        "name": "image86-bb81x63-302-418",
-                        "path": "/img/annotated_images/image86-bb81x63-302-418.png"
+                        "name": "image86-bb-81x63-302-418",
+                        "path": "../img/annotated_images/image86-bb-81x63-302-418.png"
                     }
                 ]
             }
@@ -2810,8 +2810,8 @@
                         "width": 313,
                         "area": 123322,
                         "category": "without_mask",
-                        "name": "image87-bb56x81-313-394",
-                        "path": "/img/annotated_images/image87-bb56x81-313-394.png"
+                        "name": "image87-bb-56x81-313-394",
+                        "path": "../img/annotated_images/image87-bb-56x81-313-394.png"
                     }
                 ]
             }
@@ -2842,8 +2842,8 @@
                         "width": 307,
                         "area": 132931,
                         "category": "without_mask",
-                        "name": "image88-bb105x32-307-433",
-                        "path": "/img/annotated_images/image88-bb105x32-307-433.png"
+                        "name": "image88-bb-105x32-307-433",
+                        "path": "../img/annotated_images/image88-bb-105x32-307-433.png"
                     }
                 ]
             }
@@ -2874,8 +2874,8 @@
                         "width": 346,
                         "area": 148780,
                         "category": "without_mask",
-                        "name": "image89-bb85x47-346-430",
-                        "path": "/img/annotated_images/image89-bb85x47-346-430.png"
+                        "name": "image89-bb-85x47-346-430",
+                        "path": "../img/annotated_images/image89-bb-85x47-346-430.png"
                     }
                 ]
             }
@@ -2906,8 +2906,8 @@
                         "width": 367,
                         "area": 153406,
                         "category": "without_mask",
-                        "name": "image90-bb55x61-367-418",
-                        "path": "/img/annotated_images/image90-bb55x61-367-418.png"
+                        "name": "image90-bb-55x61-367-418",
+                        "path": "../img/annotated_images/image90-bb-55x61-367-418.png"
                     }
                 ]
             }
@@ -2938,8 +2938,8 @@
                         "width": 345,
                         "area": 156630,
                         "category": "without_mask",
-                        "name": "image91-bb60x25-345-454",
-                        "path": "/img/annotated_images/image91-bb60x25-345-454.png"
+                        "name": "image91-bb-60x25-345-454",
+                        "path": "../img/annotated_images/image91-bb-60x25-345-454.png"
                     }
                 ]
             }
@@ -2970,8 +2970,8 @@
                         "width": 270,
                         "area": 114750,
                         "category": "without_mask",
-                        "name": "image92-bb130x54-270-425",
-                        "path": "/img/annotated_images/image92-bb130x54-270-425.png"
+                        "name": "image92-bb-130x54-270-425",
+                        "path": "../img/annotated_images/image92-bb-130x54-270-425.png"
                     }
                 ]
             }
@@ -3002,8 +3002,8 @@
                         "width": 454,
                         "area": 216104,
                         "category": "without_mask",
-                        "name": "image93-bb17x7-454-476",
-                        "path": "/img/annotated_images/image93-bb17x7-454-476.png"
+                        "name": "image93-bb-17x7-454-476",
+                        "path": "../img/annotated_images/image93-bb-17x7-454-476.png"
                     }
                 ]
             }
@@ -3034,8 +3034,8 @@
                         "width": 377,
                         "area": 167388,
                         "category": "without_mask",
-                        "name": "image94-bb51x31-377-444",
-                        "path": "/img/annotated_images/image94-bb51x31-377-444.png"
+                        "name": "image94-bb-51x31-377-444",
+                        "path": "../img/annotated_images/image94-bb-51x31-377-444.png"
                     }
                 ]
             }
@@ -3066,8 +3066,8 @@
                         "width": 17,
                         "area": 408,
                         "category": "without_mask",
-                        "name": "image95-bb257x31-17-24",
-                        "path": "/img/annotated_images/image95-bb257x31-17-24.png"
+                        "name": "image95-bb-257x31-17-24",
+                        "path": "../img/annotated_images/image95-bb-257x31-17-24.png"
                     }
                 ]
             }
@@ -3098,8 +3098,8 @@
                         "width": 57,
                         "area": 4104,
                         "category": "without_mask",
-                        "name": "image96-bb116x14-57-72",
-                        "path": "/img/annotated_images/image96-bb116x14-57-72.png"
+                        "name": "image96-bb-116x14-57-72",
+                        "path": "../img/annotated_images/image96-bb-116x14-57-72.png"
                     }
                 ]
             }
@@ -3130,8 +3130,8 @@
                         "width": 324,
                         "area": 151632,
                         "category": "without_mask",
-                        "name": "image97-bb91x16-324-468",
-                        "path": "/img/annotated_images/image97-bb91x16-324-468.png"
+                        "name": "image97-bb-91x16-324-468",
+                        "path": "../img/annotated_images/image97-bb-91x16-324-468.png"
                     }
                 ]
             }
@@ -3162,8 +3162,8 @@
                         "width": 42,
                         "area": 3150,
                         "category": "without_mask",
-                        "name": "image98-bb165x48-42-75",
-                        "path": "/img/annotated_images/image98-bb165x48-42-75.png"
+                        "name": "image98-bb-165x48-42-75",
+                        "path": "../img/annotated_images/image98-bb-165x48-42-75.png"
                     }
                 ]
             }
@@ -3194,8 +3194,8 @@
                         "width": 128,
                         "area": 21248,
                         "category": "without_mask",
-                        "name": "image99-bb57x6-128-166",
-                        "path": "/img/annotated_images/image99-bb57x6-128-166.png"
+                        "name": "image99-bb-57x6-128-166",
+                        "path": "../img/annotated_images/image99-bb-57x6-128-166.png"
                     }
                 ]
             }
